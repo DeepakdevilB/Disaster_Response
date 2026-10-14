@@ -10,11 +10,13 @@ import logging
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, Request
+from fastapi import APIRouter, FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
+from app.api.auth import router as auth_router
 from app.api.health import router as health_router
+from app.api.users import router as users_router
 from app.core.config import Settings, get_settings
 from app.core.logging import configure_logging
 from app.core.middleware import REQUEST_ID_HEADER, RequestContextMiddleware
@@ -62,11 +64,16 @@ def create_app(settings: Settings | None = None) -> FastAPI:
 
     app.include_router(health_router)
 
+    # Versioned business routers (auth, incidents, resources...) mount under /api/v1
+    api_v1_router = APIRouter(prefix="/api/v1")
+    api_v1_router.include_router(auth_router)
+    api_v1_router.include_router(users_router)
+    app.include_router(api_v1_router)
+
     # Inject the settings instance so Depends(get_settings) returns *this* settings,
     # not the lru_cache'd singleton (critical for testing with overridden settings).
     app.dependency_overrides[get_settings] = lambda: settings
 
-    # Versioned business routers (auth, incidents, resources...) mount under /api/v1 from T-013.
     return app
 
 

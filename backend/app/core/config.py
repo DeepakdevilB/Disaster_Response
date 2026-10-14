@@ -79,6 +79,12 @@ class Settings(BaseSettings):
     # ---- health checks ----
     health_check_timeout_seconds: float = Field(default=2.0, gt=0, le=30)
 
+    # ---- Authentication / JWT ----
+    jwt_secret_key: SecretStr = SecretStr("change-me-jwt-secret-key-at-least-32-characters")
+    jwt_algorithm: str = "HS256"
+    access_token_expire_minutes: int = Field(default=30, ge=1, le=1440)
+    refresh_token_expire_days: int = Field(default=7, ge=1, le=90)
+
     # ------------------------------------------------------------------ validators
     @field_validator("cors_origins", mode="before")
     @classmethod
@@ -110,6 +116,7 @@ class Settings(BaseSettings):
                 "redis_password",
                 "rabbitmq_password",
                 "minio_root_password",
+                "jwt_secret_key",
             )
             if getattr(self, name).get_secret_value().startswith(PLACEHOLDER_SECRET_PREFIX)
         ]

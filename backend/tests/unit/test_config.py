@@ -10,6 +10,7 @@ STRONG = {
     "redis_password": "redis-Str0ng!",
     "rabbitmq_password": "rmq-Str0ng!",
     "minio_root_password": "minio-Str0ng!",
+    "jwt_secret_key": "jwt-Str0ng-super-secret-key-32-chars!",
 }
 
 
@@ -81,6 +82,13 @@ def test_production_refuses_placeholder_secrets(make_settings):
         make_settings(environment="production", **{**STRONG, "redis_password": "change-me-redis"})
     assert "redis_password" in str(exc.value)
     assert "postgres_password" not in str(exc.value)
+
+    with pytest.raises(ValidationError, match="placeholder secrets") as exc:
+        make_settings(
+            environment="production",
+            **{**STRONG, "jwt_secret_key": "change-me-jwt"},
+        )
+    assert "jwt_secret_key" in str(exc.value)
 
 
 def test_production_accepts_real_secrets(make_settings):
