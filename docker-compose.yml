@@ -1,0 +1,156 @@
+# Intelligent Disaster Response Platform - local stack
+#
+#   docker compose up -d --build --wait      # infra + migrations + API, waits for health checks
+#   docker compose --profile test run --rm backend-tests   # backend test suite on Python 3.11
+#
+# All configuration comes from .env (copy from .env.example). Ports bind to 127.0.0.1 only.
+
+name: disaster-response
+
+x-backend-env: &backend-env
+  # Inside the compose network, services are reached by service name, not localhost.
+  POSTGRES_HOST: postgres
+  POSTGRES_PORT: "5432"
+  REDIS_HOST: redis
+  REDIS_PORT: "6379"
+  RABBITMQ_HOST: rabbitmq
+  RABBITMQ_PORT: "5672"
+  MINIO_ENDPOINT: minio:9000
+
+services:
+  postgres:
+    build:
+      context: ./infra/postgres
+    image: disaster-response/postgres:16-postgis-pgvector
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:?set POSTGRES_DB in .env}
+      POSTGRES_USER: ${POSTGRES_USER:?set POSTGRES_USER in .env}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    ports:
+      - "127.0.0.1:${HOST_POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$$POSTGRES_USER\" -d \"$$POSTGRES_DB\" -h 127.0.0.1"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?set REDIS_PASSWORD in .env}
+    command: ["sh", "-c", "exec redis-server --requirepass \"$$REDIS_PASSWORD\" --appendonly yes"]
+    ports:
+      - "127.0.0.1:${HOST_REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a \"$$REDIS_PASSWORD\" --no-auth-warning ping | grep -q PONG"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  rabbitmq:
+    image: rabbitmq:3.13-management-alpine
+    restart: unless-stopped
+    hostname: rabbitmq  # keeps the node name (and its data dir) stable across restarts
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:?set RABBITMQ_USER in .env}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:?set RABBITMQ_PASSWORD in .env}
+      RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_VHOST:-disaster}
+    ports:
+      - "127.0.0.1:${HOST_RABBITMQ_PORT:-5672}:5672"
+      - "127.0.0.1:${HOST_RABBITMQ_UI_PORT:-15672}:15672"
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "check_port_connectivity"]
+      interval: 10s
+      timeout: 10s
+      retries: 20
+      start_period: 20s
+
+  minio:
+    # NOTE: MinIO stopped publishing new community images in late 2025; this tag is pinned.
+    image: minio/minio:RELEASE.2025-04-22T22-12-26Z
+    restart: unless-stopped
+    command: ["server", "/data", "--console-address", ":9001"]
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:?set MINIO_ROOT_USER in .env}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?set MINIO_ROOT_PASSWORD in .env}
+    ports:
+      - "127.0.0.1:${HOST_MINIO_PORT:-9000}:9000"
+      - "127.0.0.1:${HOST_MINIO_CONSOLE_PORT:-9001}:9001"
+    volumes:
+      - minio-data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  # One-shot job: applies Alembic migrations, then exits 0. The API waits for it.
+  migrate:
+    build:
+      context: ./backend
+      target: runtime
+    image: disaster-response/backend:dev
+    env_file: .env
+    environment:
+      <<: *backend-env
+    command: ["alembic", "upgrade", "head"]
+    restart: "no"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  api:
+    image: disaster-response/backend:dev
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      <<: *backend-env
+    ports:
+      - "127.0.0.1:${HOST_API_PORT:-8000}:8000"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3).status == 200 else 1)"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+  # Runs the backend test suite (unit + integration) on Python 3.11 against the compose Postgres.
+  backend-tests:
+    profiles: ["test"]
+    build:
+      context: ./backend
+      target: test
+    image: disaster-response/backend:test
+    env_file: .env
+    environment:
+      <<: *backend-env
+      REQUIRE_INTEGRATION: "1"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres-data:
+  redis-data:
+  rabbitmq-data:
+  minio-data:

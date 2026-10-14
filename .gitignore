@@ -1,0 +1,44 @@
+# ---- Secrets / local config ----
+.env
+.env.*
+!.env.example
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+build/
+dist/
+
+# ---- Node / frontend ----
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# ---- ML artifacts (large files never go in git) ----
+ml/data/raw/
+ml/data/processed/
+ml/models/
+mlruns/
+*.pt
+*.onnx
+*.safetensors
+
+# ---- OS / editors ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# ---- Office lock files ----
+~$*

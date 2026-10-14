@@ -1,0 +1,7 @@
+# Normalise line endings so shell scripts and Dockerfiles work inside Linux containers
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.xlsx binary
+*.png binary
+*.jpg binary
