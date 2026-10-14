@@ -14,8 +14,6 @@ from app.api.health import get_health_checks
 from app.core.config import Settings
 from app.db.session import get_db
 from app.main import create_app
-from app.modules.audit.models import AuditLog
-from app.modules.users.models import User
 from app.services.health import HealthCheck
 
 
@@ -30,16 +28,17 @@ def db_session() -> Iterator[Session]:
         connect_args={"check_same_thread": False},
         poolclass=StaticPool,
     )
-    User.__table__.create(engine)
-    AuditLog.__table__.create(engine)
+    import app.db.registry  # noqa: F401
+    from app.db.base import Base
+
+    Base.metadata.create_all(engine)
     factory = sessionmaker(bind=engine, autoflush=False, expire_on_commit=False)
     session = factory()
     try:
         yield session
     finally:
         session.close()
-        AuditLog.__table__.drop(engine)
-        User.__table__.drop(engine)
+        Base.metadata.drop_all(engine)
 
 
 @pytest.fixture

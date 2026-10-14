@@ -6,7 +6,7 @@ import enum
 import uuid
 
 from geoalchemy2 import Geography
-from sqlalchemy import Enum, text
+from sqlalchemy import Enum, String, text
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column
 
@@ -25,13 +25,16 @@ def pg_enum(enum_cls: type[enum.Enum], name: str) -> Enum:
     )
 
 
-def geography_point() -> Geography:
+def geography_point():
     """``GEOGRAPHY(POINT, 4326)``. Distances on geography are in metres on the WGS 84 spheroid.
 
     ``spatial_index=False`` because every GiST index is declared explicitly (with a stable
     name) in the model's ``__table_args__`` and in the migration.
+    Includes a SQLite fallback to allow fast in-memory unit testing.
     """
-    return Geography(geometry_type="POINT", srid=SRID_WGS84, spatial_index=False)
+    return Geography(geometry_type="POINT", srid=SRID_WGS84, spatial_index=False).with_variant(
+        String, "sqlite"
+    )
 
 
 class UUIDPrimaryKeyMixin:

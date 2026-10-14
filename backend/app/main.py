@@ -17,6 +17,7 @@ from fastapi.responses import JSONResponse
 from app.api.admin import router as admin_router
 from app.api.auth import router as auth_router
 from app.api.health import router as health_router
+from app.api.incidents import router as incidents_router
 from app.api.users import router as users_router
 from app.core.config import Settings, get_settings
 from app.core.logging import configure_logging
@@ -70,6 +71,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     api_v1_router.include_router(auth_router)
     api_v1_router.include_router(users_router)
     api_v1_router.include_router(admin_router)
+    api_v1_router.include_router(incidents_router)
     app.include_router(api_v1_router)
 
     # Inject the settings instance so Depends(get_settings) returns *this* settings,

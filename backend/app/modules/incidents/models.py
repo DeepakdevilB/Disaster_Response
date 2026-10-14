@@ -135,7 +135,7 @@ class IncidentReport(UUIDPrimaryKeyMixin, TimestampMixin, Base):
 
     __tablename__ = "incident_reports"
     __table_args__ = (
-        CheckConstraint("length(btrim(raw_text)) > 0", name="raw_text_not_blank"),
+        CheckConstraint("length(trim(raw_text)) > 0", name="raw_text_not_blank"),
         CheckConstraint("processing_attempts >= 0", name="processing_attempts_non_negative"),
         Index("ix_incident_reports_location", "location", postgresql_using="gist"),
         Index("ix_incident_reports_incident_id", "incident_id"),
