@@ -1,0 +1,401 @@
+text,category,severity,people_count,location,resource_needed,language
+Lost 6-year-old child wearing red shirt missing in large crowd near Main Market near SBI Bank. Parents searching panicking.,other,HIGH,1,Main Market near SBI Bank,rescue_team,hi-Latn
+"Heart attack and unconscious elderly patient at Indira Nagar Colony near water tank. Oxygen level dropping rapidly, pulse weak. Send advanced life support ambulance immediately!",medical,CRITICAL,2,Indira Nagar Colony near water tank,ambulance,hi-Latn
+Water accumulation near Yamuna river bank low lying area bus stand after morning rains. Potholes covered.,flood,LOW,0,Yamuna river bank low lying area,none,en
+Main Market near SBI Bank me sadak dhas gayi hai bohot bada gaddha ban gaya hai.,infrastructure,HIGH,0,Main Market near SBI Bank,none,hi-Latn
+Elevator stalled between 7th and 8th floor at Sector 14 near metro station. 1 people stuck inside for 2 hours with fan off.,rescue,HIGH,1,Sector 14 near metro station,rescue_team,hi-Latn
+Smoke coming out of abandoned godown near Indira Nagar Colony near water tank. Fire brigade should inspect.,fire,MEDIUM,2,Indira Nagar Colony near water tank,none,hi-Latn
+"Ring Road near flyover ke paas baadh ka paani bohot tez hai, 7 bache aur mahilayein phansi hain, jaldi rescue team bhejo!",flood,CRITICAL,7,Ring Road near flyover,boat,hi-Latn
+"Indira Nagar Colony near water tank me lift kharab ho gayi hai, 4 log fas gaye hain ghutan ho rahi hai.",rescue,HIGH,4,Indira Nagar Colony near water tank,rescue_team,hi-Latn
+"Heart attack and unconscious elderly patient at Lal Baug industrial area. Oxygen level dropping rapidly, pulse weak. Send advanced life support ambulance immediately!",medical,CRITICAL,1,Lal Baug industrial area,ambulance,hi-Latn
+Volunteers asking where to deposit clothes donation near Railway Station Platform 2.,other,LOW,0,Railway Station Platform 2,none,hi-Latn
+"Ganga Ghat Road near bridge par bura accident hua hai! 2 log behosh pade hain, bohot khoon beh raha hai. Jaldi ambulance bhejo please!",medical,CRITICAL,2,Ganga Ghat Road near bridge,ambulance,hi-Latn
+"Main Market near SBI Bank par halka paani jama hai sadak kinare, koi fasna nahi hua hai.",flood,LOW,0,Main Market near SBI Bank,none,hi-Latn
+"Civil Lines near district hospital par halka paani jama hai sadak kinare, koi fasna nahi hua hai.",flood,LOW,0,Civil Lines near district hospital,none,hi-Latn
+Open manhole cover missing on footpath near MG Road near junction. Pedestrian tripping hazard.,infrastructure,LOW,0,MG Road near junction,none,en
+"Large branch fell trapping a small vehicle at Ring Road near flyover. No serious injury, need rescue saw to clear.",rescue,MEDIUM,1,Ring Road near flyover,rescue_team,en
+Moderate street flooding near Ring Road near flyover. Traffic blocked and shops waterlogged.,flood,MEDIUM,3,Ring Road near flyover,food_kit,hi-Latn
+Pothole on service lane near National Highway 48 mile marker 42 causing slow vehicular movement.,infrastructure,LOW,0,National Highway 48 mile marker 42,none,hi-Latn
+"Streetlights not functioning in entire sector near Indira Nagar Colony near water tank, complete dark stretch.",infrastructure,MEDIUM,0,Indira Nagar Colony near water tank,none,en
+Sector 14 near metro station me paani bharne se rashan aur drinking water khatam ho gaya hai. 2 families need food kits.,flood,MEDIUM,2,Sector 14 near metro station,food_kit,hi-Latn
+"Water stagnation of 2 feet near Old City near historical gate. Drainage blocked, drinking water contaminated. Need clean food and water kits.",flood,MEDIUM,2,Old City near historical gate,food_kit,hi-Latn
+"MG Road near junction me purana makaan gir gaya hai! Malbe me 9 log dabe hue hain, niche se aawazein aa rahi hain. Jaldi rescue team bhejo!",rescue,CRITICAL,9,MG Road near junction,rescue_team,hi-Latn
+"House fire at Civil Lines near district hospital. Kitchen caught fire from LPG leak, 3 persons suffered minor burns and need rescue.",fire,HIGH,3,Civil Lines near district hospital,rescue_team,hi-Latn
+Relief shelter near MG Road near junction running out of dry food rations and baby milk powder.,other,MEDIUM,0,MG Road near junction,food_kit,en
+Open manhole cover missing on footpath near Yamuna river bank low lying area. Pedestrian tripping hazard.,infrastructure,LOW,0,Yamuna river bank low lying area,none,en
+"Massive sinkhole opened on main road at Subhash Chowk near clock tower. Crater is 15 feet wide and 10 feet deep, traffic completely halted.",infrastructure,HIGH,0,Subhash Chowk near clock tower,none,en
+"Shanti Nagar cross road me dukan me aag lag gayi hai. Flames reaching adjacent buildings, 4 people evacuated.",fire,HIGH,4,Shanti Nagar cross road,rescue_team,hi-Latn
+Lost 6-year-old child wearing red shirt missing in large crowd near Subhash Chowk near clock tower. Parents searching panicking.,other,HIGH,1,Subhash Chowk near clock tower,rescue_team,hi-Latn
+Relief shelter near Civil Lines near district hospital running out of dry food rations and baby milk powder.,other,MEDIUM,0,Civil Lines near district hospital,food_kit,en
+Controlled trash burning near Old City near historical gate causing smoke nuisance on the road.,fire,LOW,0,Old City near historical gate,none,hi-Latn
+"Severe gastroenteritis and dehydration outbreak at Railway Station Platform 2. 2 children throwing up, need IV fluids and medical kits.",medical,MEDIUM,2,Railway Station Platform 2,medical_kit,hi-Latn
+Smoke coming out of abandoned godown near National Highway 48 mile marker 42. Fire brigade should inspect.,fire,MEDIUM,2,National Highway 48 mile marker 42,none,hi-Latn
+"Indira Nagar Colony near water tank me food poisoning ke shikar 3 log hain. Vomiting and cramps, medical aid needed.",medical,MEDIUM,3,Indira Nagar Colony near water tank,medical_kit,hi-Latn
+Landslide swept mud onto houses at National Highway 48 mile marker 42! 9 villagers trapped under mud and rubble! Send NDRF search and rescue team with earthmovers!,rescue,CRITICAL,9,National Highway 48 mile marker 42,rescue_team,hi-Latn
+"Ganga Ghat Road near bridge par bura accident hua hai! 2 log behosh pade hain, bohot khoon beh raha hai. Jaldi ambulance bhejo please!",medical,CRITICAL,2,Ganga Ghat Road near bridge,ambulance,hi-Latn
+"Streetlights not functioning in entire sector near Railway Station Platform 2, complete dark stretch.",infrastructure,MEDIUM,0,Railway Station Platform 2,none,en
+Landslide swept mud onto houses at Civil Lines near district hospital! 5 villagers trapped under mud and rubble! Send NDRF search and rescue team with earthmovers!,rescue,CRITICAL,5,Civil Lines near district hospital,rescue_team,en
+Main highway bridge over river developed large cracks and foundation shift at Shanti Nagar cross road! Immediate traffic closure and structural inspection before collapse!,infrastructure,CRITICAL,0,Shanti Nagar cross road,rescue_team,hi-Latn
+Old City near historical gate me 4 feet paani bhar gaya hai. 2 log ghar se nikal nahi pa rahe hain. Need evacuation assistance.,flood,HIGH,2,Old City near historical gate,boat,hi-Latn
+"Ganga Ghat Road near bridge mela ground me ek bacha kho gaya hai, announcements needed.",other,HIGH,1,Ganga Ghat Road near bridge,rescue_team,hi-Latn
+Pothole on service lane near Main Market near SBI Bank causing slow vehicular movement.,infrastructure,LOW,0,Main Market near SBI Bank,none,hi-Latn
+"Kalyan Nagar 4th cross me purana makaan gir gaya hai! Malbe me 9 log dabe hue hain, niche se aawazein aa rahi hain. Jaldi rescue team bhejo!",rescue,CRITICAL,9,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+"Massive sinkhole opened on main road at Old City near historical gate. Crater is 15 feet wide and 10 feet deep, traffic completely halted.",infrastructure,HIGH,0,Old City near historical gate,none,en
+Relief shelter near Subhash Chowk near clock tower running out of dry food rations and baby milk powder.,other,MEDIUM,0,Subhash Chowk near clock tower,food_kit,en
+Water supply tanker needed at community hall near National Highway 48 mile marker 42.,other,MEDIUM,0,National Highway 48 mile marker 42,food_kit,hi-Latn
+Lost 6-year-old child wearing red shirt missing in large crowd near Civil Lines near district hospital. Parents searching panicking.,other,HIGH,1,Civil Lines near district hospital,rescue_team,hi-Latn
+Diabetic ketoacidosis patient unresponsive at Railway Station Platform 2. Doctor advised immediate emergency transfer.,medical,HIGH,1,Railway Station Platform 2,ambulance,hi-Latn
+"Subhash Chowk near clock tower me paani 8 foot chadh gaya hai! 15 log chhat par phanse hue hain, bachao please boat bhejo turant!",flood,CRITICAL,15,Subhash Chowk near clock tower,boat,hi-Latn
+Main highway bridge over river developed large cracks and foundation shift at Lal Baug industrial area! Immediate traffic closure and structural inspection before collapse!,infrastructure,CRITICAL,0,Lal Baug industrial area,rescue_team,hi-Latn
+Main highway bridge over river developed large cracks and foundation shift at National Highway 48 mile marker 42! Immediate traffic closure and structural inspection before collapse!,infrastructure,CRITICAL,0,National Highway 48 mile marker 42,rescue_team,hi-Latn
+Lost 6-year-old child wearing red shirt missing in large crowd near MG Road near junction. Parents searching panicking.,other,HIGH,1,MG Road near junction,rescue_team,hi-Latn
+Massive chemical fire broken out at Civil Lines near district hospital! 5 workers trapped inside warehouse with toxic smoke! Fire tender and rescue team needed!,fire,CRITICAL,5,Civil Lines near district hospital,rescue_team,hi-Latn
+Pothole on service lane near Civil Lines near district hospital causing slow vehicular movement.,infrastructure,LOW,0,Civil Lines near district hospital,none,hi-Latn
+"Main Market near SBI Bank me paani 8 foot chadh gaya hai! 9 log chhat par phanse hue hain, bachao please boat bhejo turant!",flood,CRITICAL,9,Main Market near SBI Bank,boat,hi-Latn
+Controlled trash burning near Sector 14 near metro station causing smoke nuisance on the road.,fire,LOW,0,Sector 14 near metro station,none,hi-Latn
+Traffic signals out of order at Main Market near SBI Bank intersection for past 6 hours causing gridlock.,infrastructure,MEDIUM,0,Main Market near SBI Bank,none,hi-Latn
+Cat stuck on high electrical pole near Old City near historical gate. Locals requesting municipal assistance.,rescue,LOW,0,Old City near historical gate,none,en
+"Gas cylinder explosion inside 3-story building at Yamuna river bank low lying area. Heavy blaze spreading, 10 people crying for help on upper floor!",fire,CRITICAL,10,Yamuna river bank low lying area,rescue_team,en
+"Electrocution accident at Ring Road near flyover. High voltage wire snapped, 5 victims unconscious with severe electrical burns!",medical,CRITICAL,5,Ring Road near flyover,ambulance,en
+Smoke coming out of abandoned godown near National Highway 48 mile marker 42. Fire brigade should inspect.,fire,MEDIUM,2,National Highway 48 mile marker 42,none,hi-Latn
+Indira Nagar Colony near water tank relief camp timing inquiry from citizen.,other,LOW,0,Indira Nagar Colony near water tank,none,en
+"Railway Station Platform 2 me ek buzug gir gaye hain, sar pe chot aayi hai aur behoshi hai. Ambulance required.",medical,HIGH,3,Railway Station Platform 2,ambulance,hi-Latn
+Stray dog and child stuck in dry storm drain opening at National Highway 48 mile marker 42. Firefighters needed with ladder.,rescue,MEDIUM,2,National Highway 48 mile marker 42,rescue_team,hi-Latn
+Controlled trash burning near Indira Nagar Colony near water tank causing smoke nuisance on the road.,fire,LOW,0,Indira Nagar Colony near water tank,none,hi-Latn
+"Asthma attack patient struggling for breath near Sector 14 near metro station, inhaler exhausted.",medical,MEDIUM,3,Sector 14 near metro station,medical_kit,hi-Latn
+Controlled trash burning near Kalyan Nagar 4th cross causing smoke nuisance on the road.,fire,LOW,0,Kalyan Nagar 4th cross,none,hi-Latn
+"Water levels rose above 7 feet in Main Market near SBI Bank. 15 people trapped on roof, water still rising fast! Send rescue boats immediately!",flood,CRITICAL,15,Main Market near SBI Bank,boat,hi-Latn
+Controlled trash burning near Main Market near SBI Bank causing smoke nuisance on the road.,fire,LOW,0,Main Market near SBI Bank,none,hi-Latn
+"Severe gastroenteritis and dehydration outbreak at Main Market near SBI Bank. 3 children throwing up, need IV fluids and medical kits.",medical,MEDIUM,3,Main Market near SBI Bank,medical_kit,hi-Latn
+"Heart attack and unconscious elderly patient at Yamuna river bank low lying area. Oxygen level dropping rapidly, pulse weak. Send advanced life support ambulance immediately!",medical,CRITICAL,4,Yamuna river bank low lying area,ambulance,hi-Latn
+Ganga Ghat Road near bridge me sadak dhas gayi hai bohot bada gaddha ban gaya hai.,infrastructure,HIGH,0,Ganga Ghat Road near bridge,none,hi-Latn
+Fallen tree blocking two lanes of road at Kalyan Nagar 4th cross. Municipal crane needed to clear.,infrastructure,MEDIUM,0,Kalyan Nagar 4th cross,none,hi-Latn
+"Small waste bin fire near Lal Baug industrial area footpath, local shopkeepers putting it out with sand.",fire,LOW,0,Lal Baug industrial area,none,hi-Latn
+Elevator stalled between 7th and 8th floor at Indira Nagar Colony near water tank. 1 people stuck inside for 2 hours with fan off.,rescue,HIGH,1,Indira Nagar Colony near water tank,rescue_team,en
+Water supply tanker needed at community hall near Railway Station Platform 2.,other,MEDIUM,0,Railway Station Platform 2,food_kit,hi-Latn
+"Railway Station Platform 2 me lift kharab ho gayi hai, 4 log fas gaye hain ghutan ho rahi hai.",rescue,HIGH,4,Railway Station Platform 2,rescue_team,hi-Latn
+"Heavy waterlogging at Yamuna river bank low lying area, water is knee-deep and entering ground floors. 2 residents unable to evacuate.",flood,HIGH,2,Yamuna river bank low lying area,boat,hi-Latn
+Old 4-storey residential building collapsed at Subhash Chowk near clock tower! At least 7 people buried under concrete debris and shouting for help! Heavy rescue equipment needed urgently!,rescue,CRITICAL,7,Subhash Chowk near clock tower,rescue_team,hi-Latn
+Controlled trash burning near Indira Nagar Colony near water tank causing smoke nuisance on the road.,fire,LOW,0,Indira Nagar Colony near water tank,none,hi-Latn
+"Massive sinkhole opened on main road at Shanti Nagar cross road. Crater is 15 feet wide and 10 feet deep, traffic completely halted.",infrastructure,HIGH,0,Shanti Nagar cross road,none,en
+Car fell into deep drainage canal near Ganga Ghat Road near bridge. 3 passengers trapped inside cabin with rising water.,rescue,HIGH,3,Ganga Ghat Road near bridge,rescue_team,en
+Controlled trash burning near Old City near historical gate causing smoke nuisance on the road.,fire,LOW,0,Old City near historical gate,none,hi-Latn
+Stray dog and child stuck in dry storm drain opening at Lal Baug industrial area. Firefighters needed with ladder.,rescue,MEDIUM,1,Lal Baug industrial area,rescue_team,en
+Lost 6-year-old child wearing red shirt missing in large crowd near Ring Road near flyover. Parents searching panicking.,other,HIGH,1,Ring Road near flyover,rescue_team,hi-Latn
+"Water stagnation of 2 feet near National Highway 48 mile marker 42. Drainage blocked, drinking water contaminated. Need clean food and water kits.",flood,MEDIUM,2,National Highway 48 mile marker 42,food_kit,hi-Latn
+Elevator stalled between 7th and 8th floor at Shanti Nagar cross road. 4 people stuck inside for 2 hours with fan off.,rescue,HIGH,4,Shanti Nagar cross road,rescue_team,en
+Landslide swept mud onto houses at National Highway 48 mile marker 42! 2 villagers trapped under mud and rubble! Send NDRF search and rescue team with earthmovers!,rescue,CRITICAL,2,National Highway 48 mile marker 42,rescue_team,hi-Latn
+"Sector 14 near metro station me purana makaan gir gaya hai! Malbe me 8 log dabe hue hain, niche se aawazein aa rahi hain. Jaldi rescue team bhejo!",rescue,CRITICAL,8,Sector 14 near metro station,rescue_team,hi-Latn
+"Large branch fell trapping a small vehicle at MG Road near junction. No serious injury, need rescue saw to clear.",rescue,MEDIUM,2,MG Road near junction,rescue_team,en
+"Gas cylinder explosion inside 3-story building at Indira Nagar Colony near water tank. Heavy blaze spreading, 7 people crying for help on upper floor!",fire,CRITICAL,7,Indira Nagar Colony near water tank,rescue_team,en
+"Heavy waterlogging at Kalyan Nagar 4th cross, water is knee-deep and entering ground floors. 6 residents unable to evacuate.",flood,HIGH,6,Kalyan Nagar 4th cross,boat,hi-Latn
+"Asthma attack patient struggling for breath near Sector 14 near metro station, inhaler exhausted.",medical,MEDIUM,1,Sector 14 near metro station,medical_kit,hi-Latn
+Cat stuck on high electrical pole near Ring Road near flyover. Locals requesting municipal assistance.,rescue,LOW,0,Ring Road near flyover,none,en
+Main highway bridge over river developed large cracks and foundation shift at Main Market near SBI Bank! Immediate traffic closure and structural inspection before collapse!,infrastructure,CRITICAL,0,Main Market near SBI Bank,rescue_team,hi-Latn
+Moderate street flooding near Kalyan Nagar 4th cross. Traffic blocked and shops waterlogged.,flood,MEDIUM,1,Kalyan Nagar 4th cross,food_kit,hi-Latn
+Controlled trash burning near Railway Station Platform 2 causing smoke nuisance on the road.,fire,LOW,0,Railway Station Platform 2,none,hi-Latn
+"Streetlights not functioning in entire sector near Indira Nagar Colony near water tank, complete dark stretch.",infrastructure,MEDIUM,0,Indira Nagar Colony near water tank,none,en
+Sector 14 near metro station ke paas footpath par manhole ka dhakkan toota hua hai.,infrastructure,LOW,0,Sector 14 near metro station,none,hi-Latn
+Railway Station Platform 2 me paani bharne se rashan aur drinking water khatam ho gaya hai. 3 families need food kits.,flood,MEDIUM,3,Railway Station Platform 2,food_kit,hi-Latn
+Yamuna river bank low lying area ke paas dry grass caught fire in empty plot. No structural damage yet.,fire,MEDIUM,2,Yamuna river bank low lying area,none,hi-Latn
+"Small waste bin fire near MG Road near junction footpath, local shopkeepers putting it out with sand.",fire,LOW,0,MG Road near junction,none,hi-Latn
+"Commercial complex caught fire near Yamuna river bank low lying area. Exit stairs blocked by flames, 7 shoppers trapped on 2nd floor!",fire,CRITICAL,7,Yamuna river bank low lying area,rescue_team,hi-Latn
+"Severe gastroenteritis and dehydration outbreak at National Highway 48 mile marker 42. 1 children throwing up, need IV fluids and medical kits.",medical,MEDIUM,1,National Highway 48 mile marker 42,medical_kit,hi-Latn
+Stray dog and child stuck in dry storm drain opening at Kalyan Nagar 4th cross. Firefighters needed with ladder.,rescue,MEDIUM,1,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+Indira Nagar Colony near water tank me sadak dhas gayi hai bohot bada gaddha ban gaya hai.,infrastructure,HIGH,0,Indira Nagar Colony near water tank,none,hi-Latn
+Head-on collision between bus and truck at Ganga Ghat Road near bridge. 3 passengers critically injured with severe bleeding and head trauma! Need multiple ambulances urgently!,medical,CRITICAL,3,Ganga Ghat Road near bridge,ambulance,en
+"Small waste bin fire near Civil Lines near district hospital footpath, local shopkeepers putting it out with sand.",fire,LOW,0,Civil Lines near district hospital,none,hi-Latn
+Electrical transformer exploded and caught fire near Shanti Nagar cross road. Sparks spreading to nearby trees and houses.,fire,HIGH,3,Shanti Nagar cross road,rescue_team,hi-Latn
+Lost 6-year-old child wearing red shirt missing in large crowd near Ring Road near flyover. Parents searching panicking.,other,HIGH,1,Ring Road near flyover,rescue_team,hi-Latn
+Water supply tanker needed at community hall near Old City near historical gate.,other,MEDIUM,0,Old City near historical gate,food_kit,hi-Latn
+Relief shelter near Main Market near SBI Bank running out of dry food rations and baby milk powder.,other,MEDIUM,0,Main Market near SBI Bank,food_kit,hi-Latn
+"Heart attack and unconscious elderly patient at Main Market near SBI Bank. Oxygen level dropping rapidly, pulse weak. Send advanced life support ambulance immediately!",medical,CRITICAL,1,Main Market near SBI Bank,ambulance,hi-Latn
+"Heart attack and unconscious elderly patient at MG Road near junction. Oxygen level dropping rapidly, pulse weak. Send advanced life support ambulance immediately!",medical,CRITICAL,5,MG Road near junction,ambulance,hi-Latn
+General inquiry regarding disaster relief helpline numbers for Civil Lines near district hospital district.,other,LOW,0,Civil Lines near district hospital,none,en
+Water supply tanker needed at community hall near Yamuna river bank low lying area.,other,MEDIUM,0,Yamuna river bank low lying area,food_kit,hi-Latn
+"High-tension 11kV electrical wire snapped and fell across flooded road at Shanti Nagar cross road! Severe public electrocution hazard, cut power grid immediately!",infrastructure,CRITICAL,0,Shanti Nagar cross road,rescue_team,hi-Latn
+River overflowed near Main Market near SBI Bank. Roads are submerged and power is cut off. 5 people need safe shelter.,flood,HIGH,5,Main Market near SBI Bank,boat,hi-Latn
+Sector 14 near metro station me 4 feet paani bhar gaya hai. 4 log ghar se nikal nahi pa rahe hain. Need evacuation assistance.,flood,HIGH,4,Sector 14 near metro station,boat,hi-Latn
+Lost 6-year-old child wearing red shirt missing in large crowd near MG Road near junction. Parents searching panicking.,other,HIGH,1,MG Road near junction,rescue_team,hi-Latn
+Stray dog and child stuck in dry storm drain opening at Ring Road near flyover. Firefighters needed with ladder.,rescue,MEDIUM,2,Ring Road near flyover,rescue_team,en
+Water accumulation near Main Market near SBI Bank bus stand after morning rains. Potholes covered.,flood,LOW,0,Main Market near SBI Bank,none,hi-Latn
+"Ring Road near flyover me bishaan aag lag gayi hai factory me! 3 log andar fas gaye hain, dhuan bohot tez hai. Turant fire brigade aur rescue team bhejo!",fire,CRITICAL,3,Ring Road near flyover,rescue_team,hi-Latn
+Traffic signals out of order at Ring Road near flyover intersection for past 6 hours causing gridlock.,infrastructure,MEDIUM,0,Ring Road near flyover,none,en
+Car fell into deep drainage canal near Ganga Ghat Road near bridge. 1 passengers trapped inside cabin with rising water.,rescue,HIGH,1,Ganga Ghat Road near bridge,rescue_team,en
+Person suffered minor knee scrape from bicycle skid at National Highway 48 mile marker 42. First aid bandage applied.,medical,LOW,1,National Highway 48 mile marker 42,medical_kit,hi-Latn
+Person suffered minor knee scrape from bicycle skid at Indira Nagar Colony near water tank. First aid bandage applied.,medical,LOW,1,Indira Nagar Colony near water tank,medical_kit,hi-Latn
+Water supply tanker needed at community hall near Main Market near SBI Bank.,other,MEDIUM,0,Main Market near SBI Bank,food_kit,hi-Latn
+"Main municipal water pipeline burst at National Highway 48 mile marker 42, flooding road and cutting drinking water to 5000 households.",infrastructure,HIGH,0,National Highway 48 mile marker 42,none,hi-Latn
+Open manhole cover missing on footpath near Subhash Chowk near clock tower. Pedestrian tripping hazard.,infrastructure,LOW,0,Subhash Chowk near clock tower,none,en
+Controlled trash burning near Old City near historical gate causing smoke nuisance on the road.,fire,LOW,0,Old City near historical gate,none,hi-Latn
+"House fire at National Highway 48 mile marker 42. Kitchen caught fire from LPG leak, 4 persons suffered minor burns and need rescue.",fire,HIGH,4,National Highway 48 mile marker 42,rescue_team,hi-Latn
+"Subhash Chowk near clock tower me dukan me aag lag gayi hai. Flames reaching adjacent buildings, 3 people evacuated.",fire,HIGH,3,Subhash Chowk near clock tower,rescue_team,hi-Latn
+Relief shelter near Old City near historical gate running out of dry food rations and baby milk powder.,other,MEDIUM,0,Old City near historical gate,food_kit,en
+"Electrocution accident at Ganga Ghat Road near bridge. High voltage wire snapped, 1 victims unconscious with severe electrical burns!",medical,CRITICAL,1,Ganga Ghat Road near bridge,ambulance,en
+Old City near historical gate me 4 feet paani bhar gaya hai. 5 log ghar se nikal nahi pa rahe hain. Need evacuation assistance.,flood,HIGH,5,Old City near historical gate,boat,hi-Latn
+Old City near historical gate ke paas dry grass caught fire in empty plot. No structural damage yet.,fire,MEDIUM,1,Old City near historical gate,none,hi-Latn
+Fall from height at construction site in Old City near historical gate. 1 workers with multiple bone fractures.,medical,HIGH,1,Old City near historical gate,ambulance,hi-Latn
+"Severe inundation at Yamuna river bank low lying area. Current is very strong, 7 persons clinging to trees. Need NDRF rescue boat right now!",flood,CRITICAL,7,Yamuna river bank low lying area,boat,en
+"MG Road near junction me food poisoning ke shikar 1 log hain. Vomiting and cramps, medical aid needed.",medical,MEDIUM,1,MG Road near junction,medical_kit,hi-Latn
+Mild fever and body pain report near Yamuna river bank low lying area. Routine checkup required.,medical,LOW,1,Yamuna river bank low lying area,medical_kit,en
+Water supply tanker needed at community hall near Old City near historical gate.,other,MEDIUM,0,Old City near historical gate,food_kit,hi-Latn
+"Extreme flash flood at Main Market near SBI Bank! 8 elderly citizens marooned inside house, flood water entered 1st floor. Urgent boat needed!",flood,CRITICAL,8,Main Market near SBI Bank,boat,hi-Latn
+Traffic signals out of order at MG Road near junction intersection for past 6 hours causing gridlock.,infrastructure,MEDIUM,0,MG Road near junction,none,en
+"Kalyan Nagar 4th cross par halka paani jama hai sadak kinare, koi fasna nahi hua hai.",flood,LOW,0,Kalyan Nagar 4th cross,none,hi-Latn
+Mild fever and body pain report near Subhash Chowk near clock tower. Routine checkup required.,medical,LOW,1,Subhash Chowk near clock tower,medical_kit,en
+Car fell into deep drainage canal near Kalyan Nagar 4th cross. 1 passengers trapped inside cabin with rising water.,rescue,HIGH,1,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+Fallen tree blocking two lanes of road at Indira Nagar Colony near water tank. Municipal crane needed to clear.,infrastructure,MEDIUM,0,Indira Nagar Colony near water tank,none,hi-Latn
+"Heavy waterlogging at Subhash Chowk near clock tower, water is knee-deep and entering ground floors. 5 residents unable to evacuate.",flood,HIGH,5,Subhash Chowk near clock tower,boat,hi-Latn
+"National Highway 48 mile marker 42 par bridge tutne ki aashanka hai, pillar crack ho gaya hai, rasta turant band karo!",infrastructure,CRITICAL,0,National Highway 48 mile marker 42,rescue_team,hi-Latn
+Relief shelter near Subhash Chowk near clock tower running out of dry food rations and baby milk powder.,other,MEDIUM,0,Subhash Chowk near clock tower,food_kit,en
+Person suffered minor knee scrape from bicycle skid at Railway Station Platform 2. First aid bandage applied.,medical,LOW,1,Railway Station Platform 2,medical_kit,hi-Latn
+Water supply tanker needed at community hall near National Highway 48 mile marker 42.,other,MEDIUM,0,National Highway 48 mile marker 42,food_kit,hi-Latn
+Civil Lines near district hospital ke paas footpath par manhole ka dhakkan toota hua hai.,infrastructure,LOW,0,Civil Lines near district hospital,none,hi-Latn
+"Subhash Chowk near clock tower par halka paani jama hai sadak kinare, koi fasna nahi hua hai.",flood,LOW,0,Subhash Chowk near clock tower,none,hi-Latn
+"MG Road near junction par bridge tutne ki aashanka hai, pillar crack ho gaya hai, rasta turant band karo!",infrastructure,CRITICAL,0,MG Road near junction,rescue_team,hi-Latn
+"Civil Lines near district hospital me lift kharab ho gayi hai, 4 log fas gaye hain ghutan ho rahi hai.",rescue,HIGH,4,Civil Lines near district hospital,rescue_team,hi-Latn
+Fall from height at construction site in Ring Road near flyover. 1 workers with multiple bone fractures.,medical,HIGH,1,Ring Road near flyover,ambulance,hi-Latn
+"Yamuna river bank low lying area me lift kharab ho gayi hai, 4 log fas gaye hain ghutan ho rahi hai.",rescue,HIGH,4,Yamuna river bank low lying area,rescue_team,hi-Latn
+"Kalyan Nagar 4th cross me dukan me aag lag gayi hai. Flames reaching adjacent buildings, 3 people evacuated.",fire,HIGH,3,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+"Massive sinkhole opened on main road at Old City near historical gate. Crater is 15 feet wide and 10 feet deep, traffic completely halted.",infrastructure,HIGH,0,Old City near historical gate,none,en
+Diabetic ketoacidosis patient unresponsive at MG Road near junction. Doctor advised immediate emergency transfer.,medical,HIGH,1,MG Road near junction,ambulance,hi-Latn
+"Streetlights not functioning in entire sector near Kalyan Nagar 4th cross, complete dark stretch.",infrastructure,MEDIUM,0,Kalyan Nagar 4th cross,none,hi-Latn
+"Shanti Nagar cross road me food poisoning ke shikar 2 log hain. Vomiting and cramps, medical aid needed.",medical,MEDIUM,2,Shanti Nagar cross road,medical_kit,hi-Latn
+Water supply tanker needed at community hall near Indira Nagar Colony near water tank.,other,MEDIUM,0,Indira Nagar Colony near water tank,food_kit,hi-Latn
+"Yamuna river bank low lying area me dukan me aag lag gayi hai. Flames reaching adjacent buildings, 1 people evacuated.",fire,HIGH,1,Yamuna river bank low lying area,rescue_team,hi-Latn
+"Yamuna river bank low lying area par bridge tutne ki aashanka hai, pillar crack ho gaya hai, rasta turant band karo!",infrastructure,CRITICAL,0,Yamuna river bank low lying area,rescue_team,hi-Latn
+Open manhole cover missing on footpath near Civil Lines near district hospital. Pedestrian tripping hazard.,infrastructure,LOW,0,Civil Lines near district hospital,none,en
+"Small waste bin fire near Yamuna river bank low lying area footpath, local shopkeepers putting it out with sand.",fire,LOW,0,Yamuna river bank low lying area,none,hi-Latn
+Controlled trash burning near Lal Baug industrial area causing smoke nuisance on the road.,fire,LOW,0,Lal Baug industrial area,none,hi-Latn
+"Gas cylinder explosion inside 3-story building at Sector 14 near metro station. Heavy blaze spreading, 3 people crying for help on upper floor!",fire,CRITICAL,3,Sector 14 near metro station,rescue_team,hi-Latn
+"Door lock jammed in ground floor room at Kalyan Nagar 4th cross, carpenter or lock technician needed.",rescue,LOW,0,Kalyan Nagar 4th cross,none,hi-Latn
+"National Highway 48 mile marker 42 me lift kharab ho gayi hai, 2 log fas gaye hain ghutan ho rahi hai.",rescue,HIGH,2,National Highway 48 mile marker 42,rescue_team,hi-Latn
+Volunteers asking where to deposit clothes donation near Railway Station Platform 2.,other,LOW,0,Railway Station Platform 2,none,hi-Latn
+Old 4-storey residential building collapsed at Indira Nagar Colony near water tank! At least 4 people buried under concrete debris and shouting for help! Heavy rescue equipment needed urgently!,rescue,CRITICAL,4,Indira Nagar Colony near water tank,rescue_team,hi-Latn
+"Lal Baug industrial area par halka paani jama hai sadak kinare, koi fasna nahi hua hai.",flood,LOW,0,Lal Baug industrial area,none,hi-Latn
+"Small waste bin fire near Ganga Ghat Road near bridge footpath, local shopkeepers putting it out with sand.",fire,LOW,0,Ganga Ghat Road near bridge,none,hi-Latn
+"Heavy waterlogging at Ring Road near flyover, water is knee-deep and entering ground floors. 3 residents unable to evacuate.",flood,HIGH,3,Ring Road near flyover,boat,hi-Latn
+"Large branch fell trapping a small vehicle at Ganga Ghat Road near bridge. No serious injury, need rescue saw to clear.",rescue,MEDIUM,2,Ganga Ghat Road near bridge,rescue_team,en
+"Large branch fell trapping a small vehicle at Kalyan Nagar 4th cross. No serious injury, need rescue saw to clear.",rescue,MEDIUM,2,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+"Subhash Chowk near clock tower me dukan me aag lag gayi hai. Flames reaching adjacent buildings, 4 people evacuated.",fire,HIGH,4,Subhash Chowk near clock tower,rescue_team,hi-Latn
+"Lal Baug industrial area par bura accident hua hai! 2 log behosh pade hain, bohot khoon beh raha hai. Jaldi ambulance bhejo please!",medical,CRITICAL,2,Lal Baug industrial area,ambulance,hi-Latn
+"Shanti Nagar cross road par bridge tutne ki aashanka hai, pillar crack ho gaya hai, rasta turant band karo!",infrastructure,CRITICAL,0,Shanti Nagar cross road,rescue_team,hi-Latn
+"Small waste bin fire near MG Road near junction footpath, local shopkeepers putting it out with sand.",fire,LOW,0,MG Road near junction,none,hi-Latn
+"Water stagnation of 2 feet near Subhash Chowk near clock tower. Drainage blocked, drinking water contaminated. Need clean food and water kits.",flood,MEDIUM,3,Subhash Chowk near clock tower,food_kit,hi-Latn
+Head-on collision between bus and truck at Civil Lines near district hospital. 3 passengers critically injured with severe bleeding and head trauma! Need multiple ambulances urgently!,medical,CRITICAL,3,Civil Lines near district hospital,ambulance,en
+"Commercial complex caught fire near Ganga Ghat Road near bridge. Exit stairs blocked by flames, 6 shoppers trapped on 2nd floor!",fire,CRITICAL,6,Ganga Ghat Road near bridge,rescue_team,hi-Latn
+Ganga Ghat Road near bridge relief camp timing inquiry from citizen.,other,LOW,0,Ganga Ghat Road near bridge,none,en
+Main Market near SBI Bank ke paas dry grass caught fire in empty plot. No structural damage yet.,fire,MEDIUM,1,Main Market near SBI Bank,none,hi-Latn
+"Ring Road near flyover me food poisoning ke shikar 2 log hain. Vomiting and cramps, medical aid needed.",medical,MEDIUM,2,Ring Road near flyover,medical_kit,hi-Latn
+"Indira Nagar Colony near water tank area is completely inundated, cars floating and 5 people stuck inside apartment lobby.",flood,HIGH,5,Indira Nagar Colony near water tank,boat,hi-Latn
+Traffic signals out of order at Subhash Chowk near clock tower intersection for past 6 hours causing gridlock.,infrastructure,MEDIUM,0,Subhash Chowk near clock tower,none,en
+Fallen tree blocking two lanes of road at Railway Station Platform 2. Municipal crane needed to clear.,infrastructure,MEDIUM,0,Railway Station Platform 2,none,hi-Latn
+"Severe inundation at Civil Lines near district hospital. Current is very strong, 8 persons clinging to trees. Need NDRF rescue boat right now!",flood,CRITICAL,8,Civil Lines near district hospital,boat,en
+Car fell into deep drainage canal near Ring Road near flyover. 2 passengers trapped inside cabin with rising water.,rescue,HIGH,2,Ring Road near flyover,rescue_team,en
+"Small waste bin fire near MG Road near junction footpath, local shopkeepers putting it out with sand.",fire,LOW,0,MG Road near junction,none,hi-Latn
+"Door lock jammed in ground floor room at Sector 14 near metro station, carpenter or lock technician needed.",rescue,LOW,1,Sector 14 near metro station,none,hi-Latn
+Water supply tanker needed at community hall near Yamuna river bank low lying area.,other,MEDIUM,0,Yamuna river bank low lying area,food_kit,hi-Latn
+"House fire at Old City near historical gate. Kitchen caught fire from LPG leak, 4 persons suffered minor burns and need rescue.",fire,HIGH,4,Old City near historical gate,rescue_team,hi-Latn
+Open manhole cover missing on footpath near Ring Road near flyover. Pedestrian tripping hazard.,infrastructure,LOW,0,Ring Road near flyover,none,en
+Old 4-storey residential building collapsed at Kalyan Nagar 4th cross! At least 2 people buried under concrete debris and shouting for help! Heavy rescue equipment needed urgently!,rescue,CRITICAL,2,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+Lost 6-year-old child wearing red shirt missing in large crowd near Railway Station Platform 2. Parents searching panicking.,other,HIGH,1,Railway Station Platform 2,rescue_team,hi-Latn
+"Large branch fell trapping a small vehicle at Ganga Ghat Road near bridge. No serious injury, need rescue saw to clear.",rescue,MEDIUM,1,Ganga Ghat Road near bridge,rescue_team,en
+Well caved in during cleaning at Civil Lines near district hospital. 5 laborers trapped 40 feet underground with scarce oxygen!,rescue,CRITICAL,5,Civil Lines near district hospital,rescue_team,en
+"Civil Lines near district hospital me food poisoning ke shikar 2 log hain. Vomiting and cramps, medical aid needed.",medical,MEDIUM,2,Civil Lines near district hospital,medical_kit,hi-Latn
+Car fell into deep drainage canal near MG Road near junction. 1 passengers trapped inside cabin with rising water.,rescue,HIGH,1,MG Road near junction,rescue_team,en
+"Water levels rose above 7 feet in Subhash Chowk near clock tower. 12 people trapped on roof, water still rising fast! Send rescue boats immediately!",flood,CRITICAL,12,Subhash Chowk near clock tower,boat,hi-Latn
+Person suffered minor knee scrape from bicycle skid at Indira Nagar Colony near water tank. First aid bandage applied.,medical,LOW,1,Indira Nagar Colony near water tank,medical_kit,hi-Latn
+Lost 6-year-old child wearing red shirt missing in large crowd near Sector 14 near metro station. Parents searching panicking.,other,HIGH,1,Sector 14 near metro station,rescue_team,hi-Latn
+Controlled trash burning near Indira Nagar Colony near water tank causing smoke nuisance on the road.,fire,LOW,0,Indira Nagar Colony near water tank,none,hi-Latn
+Open manhole cover missing on footpath near Ganga Ghat Road near bridge. Pedestrian tripping hazard.,infrastructure,LOW,0,Ganga Ghat Road near bridge,none,en
+"Gas cylinder explosion inside 3-story building at Shanti Nagar cross road. Heavy blaze spreading, 4 people crying for help on upper floor!",fire,CRITICAL,4,Shanti Nagar cross road,rescue_team,en
+"Large branch fell trapping a small vehicle at Subhash Chowk near clock tower. No serious injury, need rescue saw to clear.",rescue,MEDIUM,2,Subhash Chowk near clock tower,rescue_team,en
+"House fire at Kalyan Nagar 4th cross. Kitchen caught fire from LPG leak, 1 persons suffered minor burns and need rescue.",fire,HIGH,1,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+Pregnant woman in labor with severe complications at Main Market near SBI Bank. Ambulance needed to shift to maternity hospital.,medical,HIGH,3,Main Market near SBI Bank,ambulance,hi-Latn
+Diabetic ketoacidosis patient unresponsive at Kalyan Nagar 4th cross. Doctor advised immediate emergency transfer.,medical,HIGH,3,Kalyan Nagar 4th cross,ambulance,hi-Latn
+Old 4-storey residential building collapsed at Subhash Chowk near clock tower! At least 5 people buried under concrete debris and shouting for help! Heavy rescue equipment needed urgently!,rescue,CRITICAL,5,Subhash Chowk near clock tower,rescue_team,hi-Latn
+"Streetlights not functioning in entire sector near Subhash Chowk near clock tower, complete dark stretch.",infrastructure,MEDIUM,0,Subhash Chowk near clock tower,none,en
+"Small waste bin fire near Main Market near SBI Bank footpath, local shopkeepers putting it out with sand.",fire,LOW,0,Main Market near SBI Bank,none,hi-Latn
+Relief shelter near Kalyan Nagar 4th cross running out of dry food rations and baby milk powder.,other,MEDIUM,0,Kalyan Nagar 4th cross,food_kit,hi-Latn
+Traffic signals out of order at Lal Baug industrial area intersection for past 6 hours causing gridlock.,infrastructure,MEDIUM,0,Lal Baug industrial area,none,en
+Mild fever and body pain report near Ring Road near flyover. Routine checkup required.,medical,LOW,1,Ring Road near flyover,medical_kit,en
+Relief shelter near Civil Lines near district hospital running out of dry food rations and baby milk powder.,other,MEDIUM,0,Civil Lines near district hospital,food_kit,en
+"High-tension 11kV electrical wire snapped and fell across flooded road at Yamuna river bank low lying area! Severe public electrocution hazard, cut power grid immediately!",infrastructure,CRITICAL,0,Yamuna river bank low lying area,rescue_team,hi-Latn
+"Severe inundation at Old City near historical gate. Current is very strong, 10 persons clinging to trees. Need NDRF rescue boat right now!",flood,CRITICAL,10,Old City near historical gate,boat,en
+"Railway Station Platform 2 par halka paani jama hai sadak kinare, koi fasna nahi hua hai.",flood,LOW,0,Railway Station Platform 2,none,hi-Latn
+"National Highway 48 mile marker 42 mela ground me ek bacha kho gaya hai, announcements needed.",other,HIGH,1,National Highway 48 mile marker 42,rescue_team,hi-Latn
+Volunteers asking where to deposit clothes donation near Ganga Ghat Road near bridge.,other,LOW,0,Ganga Ghat Road near bridge,none,hi-Latn
+Electrical transformer exploded and caught fire near Subhash Chowk near clock tower. Sparks spreading to nearby trees and houses.,fire,HIGH,3,Subhash Chowk near clock tower,rescue_team,hi-Latn
+"Main municipal water pipeline burst at Lal Baug industrial area, flooding road and cutting drinking water to 5000 households.",infrastructure,HIGH,0,Lal Baug industrial area,none,hi-Latn
+"Large branch fell trapping a small vehicle at Railway Station Platform 2. No serious injury, need rescue saw to clear.",rescue,MEDIUM,2,Railway Station Platform 2,rescue_team,en
+Controlled trash burning near Old City near historical gate causing smoke nuisance on the road.,fire,LOW,0,Old City near historical gate,none,hi-Latn
+"Heart attack and unconscious elderly patient at National Highway 48 mile marker 42. Oxygen level dropping rapidly, pulse weak. Send advanced life support ambulance immediately!",medical,CRITICAL,4,National Highway 48 mile marker 42,ambulance,hi-Latn
+"Large branch fell trapping a small vehicle at Kalyan Nagar 4th cross. No serious injury, need rescue saw to clear.",rescue,MEDIUM,2,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+"Extreme flash flood at Shanti Nagar cross road! 9 elderly citizens marooned inside house, flood water entered 1st floor. Urgent boat needed!",flood,CRITICAL,9,Shanti Nagar cross road,boat,hi-Latn
+"Door lock jammed in ground floor room at Indira Nagar Colony near water tank, carpenter or lock technician needed.",rescue,LOW,1,Indira Nagar Colony near water tank,none,hi-Latn
+"Asthma attack patient struggling for breath near MG Road near junction, inhaler exhausted.",medical,MEDIUM,3,MG Road near junction,medical_kit,en
+"Heart attack and unconscious elderly patient at Ring Road near flyover. Oxygen level dropping rapidly, pulse weak. Send advanced life support ambulance immediately!",medical,CRITICAL,1,Ring Road near flyover,ambulance,hi-Latn
+Indira Nagar Colony near water tank me paani bharne se rashan aur drinking water khatam ho gaya hai. 4 families need food kits.,flood,MEDIUM,4,Indira Nagar Colony near water tank,food_kit,hi-Latn
+"Massive sinkhole opened on main road at Lal Baug industrial area. Crater is 15 feet wide and 10 feet deep, traffic completely halted.",infrastructure,HIGH,0,Lal Baug industrial area,none,en
+Shanti Nagar cross road relief camp timing inquiry from citizen.,other,LOW,0,Shanti Nagar cross road,none,en
+Volunteers asking where to deposit clothes donation near Shanti Nagar cross road.,other,LOW,0,Shanti Nagar cross road,none,hi-Latn
+"Extreme flash flood at Main Market near SBI Bank! 8 elderly citizens marooned inside house, flood water entered 1st floor. Urgent boat needed!",flood,CRITICAL,8,Main Market near SBI Bank,boat,hi-Latn
+"Subhash Chowk near clock tower me purana makaan gir gaya hai! Malbe me 5 log dabe hue hain, niche se aawazein aa rahi hain. Jaldi rescue team bhejo!",rescue,CRITICAL,5,Subhash Chowk near clock tower,rescue_team,hi-Latn
+Water supply tanker needed at community hall near Kalyan Nagar 4th cross.,other,MEDIUM,0,Kalyan Nagar 4th cross,food_kit,hi-Latn
+"Door lock jammed in ground floor room at Ring Road near flyover, carpenter or lock technician needed.",rescue,LOW,1,Ring Road near flyover,none,hi-Latn
+"Main municipal water pipeline burst at Civil Lines near district hospital, flooding road and cutting drinking water to 5000 households.",infrastructure,HIGH,0,Civil Lines near district hospital,none,hi-Latn
+Volunteers asking where to deposit clothes donation near Shanti Nagar cross road.,other,LOW,0,Shanti Nagar cross road,none,hi-Latn
+Pregnant woman in labor with severe complications at MG Road near junction. Ambulance needed to shift to maternity hospital.,medical,HIGH,1,MG Road near junction,ambulance,en
+Smoke coming out of abandoned godown near Civil Lines near district hospital. Fire brigade should inspect.,fire,MEDIUM,0,Civil Lines near district hospital,none,hi-Latn
+Lal Baug industrial area me sadak dhas gayi hai bohot bada gaddha ban gaya hai.,infrastructure,HIGH,0,Lal Baug industrial area,none,hi-Latn
+Electrical transformer exploded and caught fire near Indira Nagar Colony near water tank. Sparks spreading to nearby trees and houses.,fire,HIGH,2,Indira Nagar Colony near water tank,rescue_team,hi-Latn
+Cat stuck on high electrical pole near MG Road near junction. Locals requesting municipal assistance.,rescue,LOW,1,MG Road near junction,none,en
+MG Road near junction ke paas dry grass caught fire in empty plot. No structural damage yet.,fire,MEDIUM,0,MG Road near junction,none,hi-Latn
+Electrical transformer exploded and caught fire near MG Road near junction. Sparks spreading to nearby trees and houses.,fire,HIGH,1,MG Road near junction,rescue_team,hi-Latn
+"Main municipal water pipeline burst at Ganga Ghat Road near bridge, flooding road and cutting drinking water to 5000 households.",infrastructure,HIGH,0,Ganga Ghat Road near bridge,none,hi-Latn
+River overflowed near Sector 14 near metro station. Roads are submerged and power is cut off. 6 people need safe shelter.,flood,HIGH,6,Sector 14 near metro station,boat,hi-Latn
+Ganga Ghat Road near bridge relief camp timing inquiry from citizen.,other,LOW,0,Ganga Ghat Road near bridge,none,en
+"Door lock jammed in ground floor room at Main Market near SBI Bank, carpenter or lock technician needed.",rescue,LOW,0,Main Market near SBI Bank,none,hi-Latn
+"Door lock jammed in ground floor room at Shanti Nagar cross road, carpenter or lock technician needed.",rescue,LOW,1,Shanti Nagar cross road,none,hi-Latn
+"Sector 14 near metro station me dukan me aag lag gayi hai. Flames reaching adjacent buildings, 3 people evacuated.",fire,HIGH,3,Sector 14 near metro station,rescue_team,hi-Latn
+"Minor waterlogging on the side of Old City near historical gate. Vehicles moving slowly, municipal drain cleaning needed.",flood,LOW,0,Old City near historical gate,none,hi-Latn
+Old 4-storey residential building collapsed at Shanti Nagar cross road! At least 3 people buried under concrete debris and shouting for help! Heavy rescue equipment needed urgently!,rescue,CRITICAL,3,Shanti Nagar cross road,rescue_team,hi-Latn
+"Ganga Ghat Road near bridge me bishaan aag lag gayi hai factory me! 12 log andar fas gaye hain, dhuan bohot tez hai. Turant fire brigade aur rescue team bhejo!",fire,CRITICAL,12,Ganga Ghat Road near bridge,rescue_team,hi-Latn
+Moderate street flooding near Indira Nagar Colony near water tank. Traffic blocked and shops waterlogged.,flood,MEDIUM,1,Indira Nagar Colony near water tank,food_kit,hi-Latn
+"Kalyan Nagar 4th cross me lift kharab ho gayi hai, 2 log fas gaye hain ghutan ho rahi hai.",rescue,HIGH,2,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+"Shanti Nagar cross road me purana makaan gir gaya hai! Malbe me 9 log dabe hue hain, niche se aawazein aa rahi hain. Jaldi rescue team bhejo!",rescue,CRITICAL,9,Shanti Nagar cross road,rescue_team,hi-Latn
+Fallen tree blocking two lanes of road at Railway Station Platform 2. Municipal crane needed to clear.,infrastructure,MEDIUM,0,Railway Station Platform 2,none,hi-Latn
+Traffic signals out of order at Kalyan Nagar 4th cross intersection for past 6 hours causing gridlock.,infrastructure,MEDIUM,0,Kalyan Nagar 4th cross,none,hi-Latn
+Open manhole cover missing on footpath near Subhash Chowk near clock tower. Pedestrian tripping hazard.,infrastructure,LOW,0,Subhash Chowk near clock tower,none,en
+Yamuna river bank low lying area ke paas dry grass caught fire in empty plot. No structural damage yet.,fire,MEDIUM,0,Yamuna river bank low lying area,none,hi-Latn
+Relief shelter near Main Market near SBI Bank running out of dry food rations and baby milk powder.,other,MEDIUM,0,Main Market near SBI Bank,food_kit,hi-Latn
+Controlled trash burning near Ganga Ghat Road near bridge causing smoke nuisance on the road.,fire,LOW,0,Ganga Ghat Road near bridge,none,hi-Latn
+"Sector 14 near metro station me dukan me aag lag gayi hai. Flames reaching adjacent buildings, 4 people evacuated.",fire,HIGH,4,Sector 14 near metro station,rescue_team,hi-Latn
+Volunteers asking where to deposit clothes donation near Kalyan Nagar 4th cross.,other,LOW,0,Kalyan Nagar 4th cross,none,hi-Latn
+"Sector 14 near metro station me ek buzug gir gaye hain, sar pe chot aayi hai aur behoshi hai. Ambulance required.",medical,HIGH,1,Sector 14 near metro station,ambulance,hi-Latn
+MG Road near junction relief camp timing inquiry from citizen.,other,LOW,0,MG Road near junction,none,en
+"Large branch fell trapping a small vehicle at Main Market near SBI Bank. No serious injury, need rescue saw to clear.",rescue,MEDIUM,1,Main Market near SBI Bank,rescue_team,hi-Latn
+Lost 6-year-old child wearing red shirt missing in large crowd near Kalyan Nagar 4th cross. Parents searching panicking.,other,HIGH,1,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+"Main Market near SBI Bank me lift kharab ho gayi hai, 2 log fas gaye hain ghutan ho rahi hai.",rescue,HIGH,2,Main Market near SBI Bank,rescue_team,hi-Latn
+"Gas cylinder explosion inside 3-story building at National Highway 48 mile marker 42. Heavy blaze spreading, 7 people crying for help on upper floor!",fire,CRITICAL,7,National Highway 48 mile marker 42,rescue_team,hi-Latn
+Sector 14 near metro station me paani bharne se rashan aur drinking water khatam ho gaya hai. 2 families need food kits.,flood,MEDIUM,2,Sector 14 near metro station,food_kit,hi-Latn
+Subhash Chowk near clock tower ke paas footpath par manhole ka dhakkan toota hua hai.,infrastructure,LOW,0,Subhash Chowk near clock tower,none,hi-Latn
+Diabetic ketoacidosis patient unresponsive at Shanti Nagar cross road. Doctor advised immediate emergency transfer.,medical,HIGH,1,Shanti Nagar cross road,ambulance,hi-Latn
+MG Road near junction relief camp timing inquiry from citizen.,other,LOW,0,MG Road near junction,none,en
+Well caved in during cleaning at MG Road near junction. 10 laborers trapped 40 feet underground with scarce oxygen!,rescue,CRITICAL,10,MG Road near junction,rescue_team,en
+"Large branch fell trapping a small vehicle at Main Market near SBI Bank. No serious injury, need rescue saw to clear.",rescue,MEDIUM,1,Main Market near SBI Bank,rescue_team,hi-Latn
+"Severe gastroenteritis and dehydration outbreak at Kalyan Nagar 4th cross. 2 children throwing up, need IV fluids and medical kits.",medical,MEDIUM,2,Kalyan Nagar 4th cross,medical_kit,hi-Latn
+Moderate street flooding near Indira Nagar Colony near water tank. Traffic blocked and shops waterlogged.,flood,MEDIUM,1,Indira Nagar Colony near water tank,food_kit,hi-Latn
+"Heart attack and unconscious elderly patient at Kalyan Nagar 4th cross. Oxygen level dropping rapidly, pulse weak. Send advanced life support ambulance immediately!",medical,CRITICAL,1,Kalyan Nagar 4th cross,ambulance,hi-Latn
+"Door lock jammed in ground floor room at Ring Road near flyover, carpenter or lock technician needed.",rescue,LOW,1,Ring Road near flyover,none,hi-Latn
+Electrical transformer exploded and caught fire near Kalyan Nagar 4th cross. Sparks spreading to nearby trees and houses.,fire,HIGH,4,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+"Door lock jammed in ground floor room at Main Market near SBI Bank, carpenter or lock technician needed.",rescue,LOW,1,Main Market near SBI Bank,none,hi-Latn
+"Civil Lines near district hospital me lift kharab ho gayi hai, 3 log fas gaye hain ghutan ho rahi hai.",rescue,HIGH,3,Civil Lines near district hospital,rescue_team,hi-Latn
+"Minor waterlogging on the side of Old City near historical gate. Vehicles moving slowly, municipal drain cleaning needed.",flood,LOW,0,Old City near historical gate,none,hi-Latn
+"Railway Station Platform 2 me food poisoning ke shikar 3 log hain. Vomiting and cramps, medical aid needed.",medical,MEDIUM,3,Railway Station Platform 2,medical_kit,hi-Latn
+Pregnant woman in labor with severe complications at Yamuna river bank low lying area. Ambulance needed to shift to maternity hospital.,medical,HIGH,2,Yamuna river bank low lying area,ambulance,en
+"Large branch fell trapping a small vehicle at Main Market near SBI Bank. No serious injury, need rescue saw to clear.",rescue,MEDIUM,2,Main Market near SBI Bank,rescue_team,hi-Latn
+"Asthma attack patient struggling for breath near Main Market near SBI Bank, inhaler exhausted.",medical,MEDIUM,2,Main Market near SBI Bank,medical_kit,hi-Latn
+"Severe inundation at Yamuna river bank low lying area. Current is very strong, 12 persons clinging to trees. Need NDRF rescue boat right now!",flood,CRITICAL,12,Yamuna river bank low lying area,boat,en
+"Sector 14 near metro station me lift kharab ho gayi hai, 2 log fas gaye hain ghutan ho rahi hai.",rescue,HIGH,2,Sector 14 near metro station,rescue_team,hi-Latn
+Mild fever and body pain report near Kalyan Nagar 4th cross. Routine checkup required.,medical,LOW,1,Kalyan Nagar 4th cross,medical_kit,hi-Latn
+Lost 6-year-old child wearing red shirt missing in large crowd near Shanti Nagar cross road. Parents searching panicking.,other,HIGH,1,Shanti Nagar cross road,rescue_team,hi-Latn
+Garbage dump fire spreading smoke near MG Road near junction. Residents facing breathing trouble.,fire,MEDIUM,2,MG Road near junction,none,hi-Latn
+Diabetic ketoacidosis patient unresponsive at Shanti Nagar cross road. Doctor advised immediate emergency transfer.,medical,HIGH,3,Shanti Nagar cross road,ambulance,hi-Latn
+Water accumulation near Sector 14 near metro station bus stand after morning rains. Potholes covered.,flood,LOW,0,Sector 14 near metro station,none,hi-Latn
+Open manhole cover missing on footpath near Lal Baug industrial area. Pedestrian tripping hazard.,infrastructure,LOW,0,Lal Baug industrial area,none,en
+Volunteers asking where to deposit clothes donation near Ganga Ghat Road near bridge.,other,LOW,0,Ganga Ghat Road near bridge,none,hi-Latn
+Sector 14 near metro station me sadak dhas gayi hai bohot bada gaddha ban gaya hai.,infrastructure,HIGH,0,Sector 14 near metro station,none,hi-Latn
+Elevator stalled between 7th and 8th floor at Main Market near SBI Bank. 2 people stuck inside for 2 hours with fan off.,rescue,HIGH,2,Main Market near SBI Bank,rescue_team,hi-Latn
+"Large branch fell trapping a small vehicle at Main Market near SBI Bank. No serious injury, need rescue saw to clear.",rescue,MEDIUM,1,Main Market near SBI Bank,rescue_team,hi-Latn
+MG Road near junction relief camp timing inquiry from citizen.,other,LOW,0,MG Road near junction,none,en
+Volunteers asking where to deposit clothes donation near MG Road near junction.,other,LOW,0,MG Road near junction,none,hi-Latn
+"Door lock jammed in ground floor room at Shanti Nagar cross road, carpenter or lock technician needed.",rescue,LOW,0,Shanti Nagar cross road,none,hi-Latn
+"Main municipal water pipeline burst at Ganga Ghat Road near bridge, flooding road and cutting drinking water to 5000 households.",infrastructure,HIGH,0,Ganga Ghat Road near bridge,none,hi-Latn
+Smoke coming out of abandoned godown near National Highway 48 mile marker 42. Fire brigade should inspect.,fire,MEDIUM,2,National Highway 48 mile marker 42,none,hi-Latn
+"Old City near historical gate me bishaan aag lag gayi hai factory me! 4 log andar fas gaye hain, dhuan bohot tez hai. Turant fire brigade aur rescue team bhejo!",fire,CRITICAL,4,Old City near historical gate,rescue_team,hi-Latn
+Elevator stalled between 7th and 8th floor at Civil Lines near district hospital. 3 people stuck inside for 2 hours with fan off.,rescue,HIGH,3,Civil Lines near district hospital,rescue_team,en
+Diabetic ketoacidosis patient unresponsive at Subhash Chowk near clock tower. Doctor advised immediate emergency transfer.,medical,HIGH,2,Subhash Chowk near clock tower,ambulance,hi-Latn
+"Commercial complex caught fire near Shanti Nagar cross road. Exit stairs blocked by flames, 11 shoppers trapped on 2nd floor!",fire,CRITICAL,11,Shanti Nagar cross road,rescue_team,hi-Latn
+Mild fever and body pain report near Civil Lines near district hospital. Routine checkup required.,medical,LOW,1,Civil Lines near district hospital,medical_kit,en
+Stray dog and child stuck in dry storm drain opening at National Highway 48 mile marker 42. Firefighters needed with ladder.,rescue,MEDIUM,2,National Highway 48 mile marker 42,rescue_team,hi-Latn
+Indira Nagar Colony near water tank relief camp timing inquiry from citizen.,other,LOW,0,Indira Nagar Colony near water tank,none,en
+Old 4-storey residential building collapsed at Indira Nagar Colony near water tank! At least 8 people buried under concrete debris and shouting for help! Heavy rescue equipment needed urgently!,rescue,CRITICAL,8,Indira Nagar Colony near water tank,rescue_team,hi-Latn
+"Asthma attack patient struggling for breath near Subhash Chowk near clock tower, inhaler exhausted.",medical,MEDIUM,2,Subhash Chowk near clock tower,medical_kit,en
+Well caved in during cleaning at Railway Station Platform 2. 4 laborers trapped 40 feet underground with scarce oxygen!,rescue,CRITICAL,4,Railway Station Platform 2,rescue_team,en
+River overflowed near Ganga Ghat Road near bridge. Roads are submerged and power is cut off. 6 people need safe shelter.,flood,HIGH,6,Ganga Ghat Road near bridge,boat,hi-Latn
+"Old City near historical gate par halka paani jama hai sadak kinare, koi fasna nahi hua hai.",flood,LOW,0,Old City near historical gate,none,hi-Latn
+"Ring Road near flyover par halka paani jama hai sadak kinare, koi fasna nahi hua hai.",flood,LOW,0,Ring Road near flyover,none,hi-Latn
+"Severe inundation at Subhash Chowk near clock tower. Current is very strong, 6 persons clinging to trees. Need NDRF rescue boat right now!",flood,CRITICAL,6,Subhash Chowk near clock tower,boat,en
+Lost 6-year-old child wearing red shirt missing in large crowd near Ganga Ghat Road near bridge. Parents searching panicking.,other,HIGH,1,Ganga Ghat Road near bridge,rescue_team,hi-Latn
+"Door lock jammed in ground floor room at Lal Baug industrial area, carpenter or lock technician needed.",rescue,LOW,1,Lal Baug industrial area,none,hi-Latn
+Pothole on service lane near Subhash Chowk near clock tower causing slow vehicular movement.,infrastructure,LOW,0,Subhash Chowk near clock tower,none,hi-Latn
+"Main Market near SBI Bank mela ground me ek bacha kho gaya hai, announcements needed.",other,HIGH,1,Main Market near SBI Bank,rescue_team,hi-Latn
+Water supply tanker needed at community hall near Old City near historical gate.,other,MEDIUM,0,Old City near historical gate,food_kit,hi-Latn
+"Yamuna river bank low lying area me food poisoning ke shikar 3 log hain. Vomiting and cramps, medical aid needed.",medical,MEDIUM,3,Yamuna river bank low lying area,medical_kit,hi-Latn
+Sector 14 near metro station me sadak dhas gayi hai bohot bada gaddha ban gaya hai.,infrastructure,HIGH,0,Sector 14 near metro station,none,hi-Latn
+"Water stagnation of 2 feet near Indira Nagar Colony near water tank. Drainage blocked, drinking water contaminated. Need clean food and water kits.",flood,MEDIUM,3,Indira Nagar Colony near water tank,food_kit,hi-Latn
+Moderate street flooding near Railway Station Platform 2. Traffic blocked and shops waterlogged.,flood,MEDIUM,1,Railway Station Platform 2,food_kit,hi-Latn
+General inquiry regarding disaster relief helpline numbers for Old City near historical gate district.,other,LOW,0,Old City near historical gate,none,en
+Stray dog and child stuck in dry storm drain opening at Ganga Ghat Road near bridge. Firefighters needed with ladder.,rescue,MEDIUM,2,Ganga Ghat Road near bridge,rescue_team,en
+River overflowed near Civil Lines near district hospital. Roads are submerged and power is cut off. 2 people need safe shelter.,flood,HIGH,2,Civil Lines near district hospital,boat,hi-Latn
+Mild fever and body pain report near Civil Lines near district hospital. Routine checkup required.,medical,LOW,1,Civil Lines near district hospital,medical_kit,en
+"Commercial complex caught fire near Indira Nagar Colony near water tank. Exit stairs blocked by flames, 11 shoppers trapped on 2nd floor!",fire,CRITICAL,11,Indira Nagar Colony near water tank,rescue_team,hi-Latn
+Traffic signals out of order at Yamuna river bank low lying area intersection for past 6 hours causing gridlock.,infrastructure,MEDIUM,0,Yamuna river bank low lying area,none,en
+Electrical transformer exploded and caught fire near Ganga Ghat Road near bridge. Sparks spreading to nearby trees and houses.,fire,HIGH,1,Ganga Ghat Road near bridge,rescue_team,hi-Latn
+Well caved in during cleaning at Kalyan Nagar 4th cross. 5 laborers trapped 40 feet underground with scarce oxygen!,rescue,CRITICAL,5,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+Traffic signals out of order at Ganga Ghat Road near bridge intersection for past 6 hours causing gridlock.,infrastructure,MEDIUM,0,Ganga Ghat Road near bridge,none,en
+"Large branch fell trapping a small vehicle at Yamuna river bank low lying area. No serious injury, need rescue saw to clear.",rescue,MEDIUM,2,Yamuna river bank low lying area,rescue_team,en
+"Electrocution accident at Yamuna river bank low lying area. High voltage wire snapped, 1 victims unconscious with severe electrical burns!",medical,CRITICAL,1,Yamuna river bank low lying area,ambulance,en
+Fall from height at construction site in Yamuna river bank low lying area. 3 workers with multiple bone fractures.,medical,HIGH,3,Yamuna river bank low lying area,ambulance,hi-Latn
+Moderate street flooding near Shanti Nagar cross road. Traffic blocked and shops waterlogged.,flood,MEDIUM,3,Shanti Nagar cross road,food_kit,hi-Latn
+"Yamuna river bank low lying area me ek buzug gir gaye hain, sar pe chot aayi hai aur behoshi hai. Ambulance required.",medical,HIGH,2,Yamuna river bank low lying area,ambulance,hi-Latn
+Stray dog and child stuck in dry storm drain opening at Old City near historical gate. Firefighters needed with ladder.,rescue,MEDIUM,2,Old City near historical gate,rescue_team,en
+Old 4-storey residential building collapsed at Old City near historical gate! At least 9 people buried under concrete debris and shouting for help! Heavy rescue equipment needed urgently!,rescue,CRITICAL,9,Old City near historical gate,rescue_team,hi-Latn
+"Small waste bin fire near Railway Station Platform 2 footpath, local shopkeepers putting it out with sand.",fire,LOW,0,Railway Station Platform 2,none,hi-Latn
+"Streetlights not functioning in entire sector near MG Road near junction, complete dark stretch.",infrastructure,MEDIUM,0,MG Road near junction,none,en
+Diabetic ketoacidosis patient unresponsive at Sector 14 near metro station. Doctor advised immediate emergency transfer.,medical,HIGH,3,Sector 14 near metro station,ambulance,hi-Latn
+Head-on collision between bus and truck at Sector 14 near metro station. 5 passengers critically injured with severe bleeding and head trauma! Need multiple ambulances urgently!,medical,CRITICAL,5,Sector 14 near metro station,ambulance,hi-Latn
+Pothole on service lane near Subhash Chowk near clock tower causing slow vehicular movement.,infrastructure,LOW,0,Subhash Chowk near clock tower,none,hi-Latn
+"Lal Baug industrial area me ek buzug gir gaye hain, sar pe chot aayi hai aur behoshi hai. Ambulance required.",medical,HIGH,1,Lal Baug industrial area,ambulance,hi-Latn
+Controlled trash burning near Yamuna river bank low lying area causing smoke nuisance on the road.,fire,LOW,0,Yamuna river bank low lying area,none,hi-Latn
+MG Road near junction ke paas footpath par manhole ka dhakkan toota hua hai.,infrastructure,LOW,0,MG Road near junction,none,hi-Latn
+Relief shelter near Yamuna river bank low lying area running out of dry food rations and baby milk powder.,other,MEDIUM,0,Yamuna river bank low lying area,food_kit,en
+Lost 6-year-old child wearing red shirt missing in large crowd near Main Market near SBI Bank. Parents searching panicking.,other,HIGH,1,Main Market near SBI Bank,rescue_team,hi-Latn
+Pregnant woman in labor with severe complications at Lal Baug industrial area. Ambulance needed to shift to maternity hospital.,medical,HIGH,2,Lal Baug industrial area,ambulance,en
+"Streetlights not functioning in entire sector near Civil Lines near district hospital, complete dark stretch.",infrastructure,MEDIUM,0,Civil Lines near district hospital,none,en
+"Main Market near SBI Bank me bishaan aag lag gayi hai factory me! 7 log andar fas gaye hain, dhuan bohot tez hai. Turant fire brigade aur rescue team bhejo!",fire,CRITICAL,7,Main Market near SBI Bank,rescue_team,hi-Latn
+Elevator stalled between 7th and 8th floor at Ganga Ghat Road near bridge. 2 people stuck inside for 2 hours with fan off.,rescue,HIGH,2,Ganga Ghat Road near bridge,rescue_team,en
+"Main municipal water pipeline burst at National Highway 48 mile marker 42, flooding road and cutting drinking water to 5000 households.",infrastructure,HIGH,0,National Highway 48 mile marker 42,none,hi-Latn
+"High-tension 11kV electrical wire snapped and fell across flooded road at Ring Road near flyover! Severe public electrocution hazard, cut power grid immediately!",infrastructure,CRITICAL,0,Ring Road near flyover,rescue_team,hi-Latn
+"MG Road near junction me dukan me aag lag gayi hai. Flames reaching adjacent buildings, 4 people evacuated.",fire,HIGH,4,MG Road near junction,rescue_team,hi-Latn
+"Lal Baug industrial area me food poisoning ke shikar 1 log hain. Vomiting and cramps, medical aid needed.",medical,MEDIUM,1,Lal Baug industrial area,medical_kit,hi-Latn
+Moderate street flooding near Ganga Ghat Road near bridge. Traffic blocked and shops waterlogged.,flood,MEDIUM,2,Ganga Ghat Road near bridge,food_kit,hi-Latn
+Water supply tanker needed at community hall near Railway Station Platform 2.,other,MEDIUM,0,Railway Station Platform 2,food_kit,hi-Latn
+"Water stagnation of 2 feet near Lal Baug industrial area. Drainage blocked, drinking water contaminated. Need clean food and water kits.",flood,MEDIUM,4,Lal Baug industrial area,food_kit,hi-Latn
+"Electrocution accident at Ring Road near flyover. High voltage wire snapped, 1 victims unconscious with severe electrical burns!",medical,CRITICAL,1,Ring Road near flyover,ambulance,en
+Mild fever and body pain report near Yamuna river bank low lying area. Routine checkup required.,medical,LOW,1,Yamuna river bank low lying area,medical_kit,en
+"Streetlights not functioning in entire sector near Railway Station Platform 2, complete dark stretch.",infrastructure,MEDIUM,0,Railway Station Platform 2,none,en
+Person suffered minor knee scrape from bicycle skid at Main Market near SBI Bank. First aid bandage applied.,medical,LOW,1,Main Market near SBI Bank,medical_kit,hi-Latn
+Cat stuck on high electrical pole near Sector 14 near metro station. Locals requesting municipal assistance.,rescue,LOW,1,Sector 14 near metro station,none,hi-Latn
+"Main Market near SBI Bank mela ground me ek bacha kho gaya hai, announcements needed.",other,HIGH,1,Main Market near SBI Bank,rescue_team,hi-Latn
+MG Road near junction relief camp timing inquiry from citizen.,other,LOW,0,MG Road near junction,none,en
+Elevator stalled between 7th and 8th floor at Main Market near SBI Bank. 2 people stuck inside for 2 hours with fan off.,rescue,HIGH,2,Main Market near SBI Bank,rescue_team,hi-Latn
+"Heavy waterlogging at MG Road near junction, water is knee-deep and entering ground floors. 5 residents unable to evacuate.",flood,HIGH,5,MG Road near junction,boat,hi-Latn
+Water accumulation near Indira Nagar Colony near water tank bus stand after morning rains. Potholes covered.,flood,LOW,0,Indira Nagar Colony near water tank,none,en
+"Railway Station Platform 2 me bishaan aag lag gayi hai factory me! 10 log andar fas gaye hain, dhuan bohot tez hai. Turant fire brigade aur rescue team bhejo!",fire,CRITICAL,10,Railway Station Platform 2,rescue_team,hi-Latn
+Water supply tanker needed at community hall near Subhash Chowk near clock tower.,other,MEDIUM,0,Subhash Chowk near clock tower,food_kit,hi-Latn
+"Streetlights not functioning in entire sector near Subhash Chowk near clock tower, complete dark stretch.",infrastructure,MEDIUM,0,Subhash Chowk near clock tower,none,en
+Massive chemical fire broken out at National Highway 48 mile marker 42! 9 workers trapped inside warehouse with toxic smoke! Fire tender and rescue team needed!,fire,CRITICAL,9,National Highway 48 mile marker 42,rescue_team,hi-Latn
+"Door lock jammed in ground floor room at Kalyan Nagar 4th cross, carpenter or lock technician needed.",rescue,LOW,1,Kalyan Nagar 4th cross,none,hi-Latn
+Subhash Chowk near clock tower me 4 feet paani bhar gaya hai. 4 log ghar se nikal nahi pa rahe hain. Need evacuation assistance.,flood,HIGH,4,Subhash Chowk near clock tower,boat,hi-Latn
+"Large branch fell trapping a small vehicle at Shanti Nagar cross road. No serious injury, need rescue saw to clear.",rescue,MEDIUM,1,Shanti Nagar cross road,rescue_team,en
+"Yamuna river bank low lying area par halka paani jama hai sadak kinare, koi fasna nahi hua hai.",flood,LOW,0,Yamuna river bank low lying area,none,hi-Latn
+National Highway 48 mile marker 42 me sadak dhas gayi hai bohot bada gaddha ban gaya hai.,infrastructure,HIGH,0,National Highway 48 mile marker 42,none,hi-Latn
+Mild fever and body pain report near Sector 14 near metro station. Routine checkup required.,medical,LOW,1,Sector 14 near metro station,medical_kit,hi-Latn
+"Electrocution accident at Indira Nagar Colony near water tank. High voltage wire snapped, 1 victims unconscious with severe electrical burns!",medical,CRITICAL,1,Indira Nagar Colony near water tank,ambulance,en
+Moderate street flooding near Yamuna river bank low lying area. Traffic blocked and shops waterlogged.,flood,MEDIUM,2,Yamuna river bank low lying area,food_kit,hi-Latn
+Lost 6-year-old child wearing red shirt missing in large crowd near Kalyan Nagar 4th cross. Parents searching panicking.,other,HIGH,1,Kalyan Nagar 4th cross,rescue_team,hi-Latn
+Lal Baug industrial area me 4 feet paani bhar gaya hai. 4 log ghar se nikal nahi pa rahe hain. Need evacuation assistance.,flood,HIGH,4,Lal Baug industrial area,boat,hi-Latn
+"Gas cylinder explosion inside 3-story building at Lal Baug industrial area. Heavy blaze spreading, 12 people crying for help on upper floor!",fire,CRITICAL,12,Lal Baug industrial area,rescue_team,en
+Moderate street flooding near Old City near historical gate. Traffic blocked and shops waterlogged.,flood,MEDIUM,2,Old City near historical gate,food_kit,hi-Latn

@@ -59,7 +59,8 @@ ignore = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"tests/**" = ["S101", "S105", "S106", "S608"]  # asserts, test credentials, test SQL
+"tests/**" = ["S101", "S105", "S106", "S608", "E501"]  # asserts, test credentials, test SQL, report strings
+"scripts/**" = ["S106", "S311", "T201", "E501"]  # demo credentials, synthetic data, cli outputs, strings
 "alembic/versions/**" = ["E501"]
 
 # ---------------------------------------------------------------- pytest
