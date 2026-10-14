@@ -43,6 +43,13 @@ pip install -e ".[dev]"
 pytest -v
 ```
 
+### Milestone M3 Intelligent Engine Demo (T-048)
+
+```bash
+cd backend
+python scripts/demo_phase3.py
+```
+
 ### Lint
 
 ```bash
