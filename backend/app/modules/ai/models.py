@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import uuid
-from datetime import datetime
+from datetime import UTC, datetime
 from typing import Any
 
 from sqlalchemy import DateTime, Float, ForeignKey, Index, String
@@ -12,7 +12,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy.types import JSON
 
 from app.db.base import Base, TimestampMixin
-from app.db.types import UUIDPrimaryKeyMixin
+from app.db.types import UUIDPrimaryKeyMixin, vector_column
 
 
 class AIPrediction(UUIDPrimaryKeyMixin, TimestampMixin, Base):
@@ -79,3 +79,28 @@ class AIPrediction(UUIDPrimaryKeyMixin, TimestampMixin, Base):
             f"<AIPrediction id={self.id} report_id={self.report_id} "
             f"category={self.final_category} severity={self.final_severity}>"
         )
+
+
+class ReportEmbedding(Base):
+    """384-dimensional multilingual sentence embeddings for semantic duplicate detection (T-037)."""
+
+    __tablename__ = "report_embeddings"
+    __table_args__ = (Index("ix_report_embeddings_model_version", "model_version"),)
+
+    report_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("incident_reports.id", ondelete="CASCADE"),
+        primary_key=True,
+    )
+    embedding: Mapped[list[float]] = mapped_column(vector_column(384), nullable=False)
+    model_version: Mapped[str] = mapped_column(
+        String(50), nullable=False, default="paraphrase-multilingual-MiniLM-L12-v2"
+    )
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True),
+        nullable=False,
+        default=lambda: datetime.now(UTC),
+    )
+
+    def __repr__(self) -> str:
+        return f"<ReportEmbedding report_id={self.report_id} model={self.model_version}>"

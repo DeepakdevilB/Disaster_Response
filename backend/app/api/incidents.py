@@ -11,7 +11,14 @@ from sqlalchemy.orm import Session
 from app.api.deps import get_current_user
 from app.core.rbac import require_authority, require_citizen, require_responder
 from app.db.session import get_db
-from app.modules.incidents.models import IncidentCategory, IncidentSeverity, IncidentStatus
+from app.modules.incidents.models import (
+    ACTIVE_INCIDENT_STATUSES,
+    Incident,
+    IncidentCategory,
+    IncidentSeverity,
+    IncidentStatus,
+)
+from app.modules.incidents.priority import priority_engine
 from app.modules.incidents.schemas import (
     CreateReportRequest,
     IncidentDetailResponse,
@@ -159,6 +166,59 @@ def get_incidents(
         "page": page,
         "size": size,
         "pages": pages,
+    }
+
+
+@router.get(
+    "/ranked",
+    response_model=list[IncidentSummaryResponse],
+    summary="Priority-ranked feed of active incidents (T-042)",
+)
+def get_ranked_incidents(
+    limit: int = Query(default=50, ge=1, le=200),
+    current_user: User = Depends(require_responder),
+    db: Session = Depends(get_db),
+) -> list[IncidentSummaryResponse]:
+    active_incidents = (
+        db.query(Incident).filter(Incident.status.in_(ACTIVE_INCIDENT_STATUSES)).all()
+    )
+    # Recalculate dynamic priority scores including waiting time
+    for inc in active_incidents:
+        calc = priority_engine.compute_priority(
+            severity=inc.severity.value if inc.severity else None,
+            people_affected=inc.people_affected,
+            created_at=inc.created_at,
+            incident_text=f"{inc.title} {inc.description}",
+        )
+        inc.priority_score = Decimal(str(calc.priority_score))
+
+    active_incidents.sort(key=lambda x: x.priority_score or Decimal(0), reverse=True)
+    return [_to_summary_response(inc) for inc in active_incidents[:limit]]
+
+
+@router.get(
+    "/{incident_id}/priority-breakdown",
+    summary="Get explainable factor breakdown for an incident's priority score (T-041)",
+)
+def get_priority_breakdown(
+    incident_id: uuid.UUID,
+    current_user: User = Depends(require_responder),
+    db: Session = Depends(get_db),
+):
+    incident = get_incident_by_id(db, incident_id)
+    if incident is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Incident not found")
+
+    calc = priority_engine.compute_priority(
+        severity=incident.severity.value if incident.severity else None,
+        people_affected=incident.people_affected,
+        created_at=incident.created_at,
+        incident_text=f"{incident.title} {incident.description}",
+    )
+    return {
+        "incident_id": str(incident.id),
+        "priority_score": calc.priority_score,
+        "breakdown": calc.breakdown,
     }
 
 

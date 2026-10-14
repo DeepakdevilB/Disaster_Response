@@ -77,6 +77,64 @@ export interface UserProfile {
   role: "citizen" | "authority" | "rescue" | "admin";
 }
 
+export interface PriorityFactorDetail {
+  weight: number;
+  raw_factor: number;
+  contribution: number;
+  explanation: string;
+}
+
+export interface PriorityBreakdownResponse {
+  incident_id: string;
+  incident_title: string;
+  priority_score: number;
+  factors: {
+    severity: PriorityFactorDetail;
+    people_affected: PriorityFactorDetail;
+    life_threat: PriorityFactorDetail;
+    waiting_time: PriorityFactorDetail;
+    resource_need: PriorityFactorDetail;
+    location_risk: PriorityFactorDetail;
+  };
+  calculated_at: string;
+}
+
+export interface AllocationMatch {
+  incident_id: string;
+  incident_title: string;
+  incident_priority: number;
+  incident_lat: number | null;
+  incident_lon: number | null;
+  resource_id: string;
+  resource_name: string;
+  resource_type: string;
+  resource_lat: number | null;
+  resource_lon: number | null;
+  distance_km: number;
+  cost: number;
+}
+
+export interface AllocationRecommendation {
+  recommended_matches: AllocationMatch[];
+  total_matches: number;
+  unassigned_incidents: number;
+  available_resources: number;
+  algorithm: string;
+  status: string;
+}
+
+export interface AssignmentItem {
+  id: string;
+  incident_id: string;
+  resource_id: string;
+  status: string;
+  priority: number;
+  assigned_at: string;
+  notes: string | null;
+  incident_title?: string;
+  resource_name?: string;
+}
+
 let authToken: string | null = localStorage.getItem("disaster_token");
 
 export function setToken(token: string | null) {
@@ -220,6 +278,40 @@ export const api = {
     return request<ResourceItem>(`/resources/${id}`, {
       method: "PATCH",
       body: JSON.stringify(payload),
+    });
+  },
+
+  // Phase 3 Intelligent Engine Endpoints
+  async getRankedIncidents(limit = 50): Promise<IncidentSummary[]> {
+    return request<IncidentSummary[]>(`/incidents/ranked?limit=${limit}`);
+  },
+
+  async getPriorityBreakdown(incidentId: string): Promise<PriorityBreakdownResponse> {
+    return request<PriorityBreakdownResponse>(`/incidents/${incidentId}/priority-breakdown`);
+  },
+
+  async recommendAllocations(payload?: { max_distance_km?: number }): Promise<AllocationRecommendation> {
+    return request<AllocationRecommendation>("/allocations/recommend", {
+      method: "POST",
+      body: JSON.stringify(payload || {}),
+    });
+  },
+
+  async approveAllocation(payload: { incident_id: string; resource_id: string; priority?: number; notes?: string }) {
+    return request<{ message: string; assignment_id: string; resource_status: string; incident_status: string }>("/allocations/approve", {
+      method: "POST",
+      body: JSON.stringify(payload),
+    });
+  },
+
+  async getMyAssignments(): Promise<AssignmentItem[]> {
+    return request<AssignmentItem[]>("/allocations/assignments/mine");
+  },
+
+  async updateAssignmentStatus(assignmentId: string, status: string) {
+    return request<{ message: string; assignment_id: string; status: string }>(`/allocations/assignments/${assignmentId}/status`, {
+      method: "PATCH",
+      body: JSON.stringify({ status }),
     });
   },
 };

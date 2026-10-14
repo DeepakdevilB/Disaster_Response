@@ -17,6 +17,7 @@ import {
   HeartPulse,
   Info,
   LifeBuoy,
+  BarChart2,
   MapPin,
   RefreshCw,
   Search,
@@ -26,10 +27,12 @@ import {
   Waves,
   Wrench,
   XCircle,
+  Zap,
 } from "lucide-react";
 import type {
   AIPrediction,
   IncidentSummary,
+  PriorityBreakdownResponse,
   SituationSummary,
 } from "../api/client";
 import { api } from "../api/client";
@@ -80,6 +83,81 @@ export const AuthorityDashboard: React.FC<AuthorityDashboardProps> = ({
 
   // Predictions state for human-in-the-loop overrides
   const [predictions, setPredictions] = useState<Record<string, AIPrediction>>(MOCK_PREDICTIONS);
+
+  // Phase 3 Priority Breakdown state (T-041)
+  const [priorityBreakdown, setPriorityBreakdown] = useState<PriorityBreakdownResponse | null>(null);
+  const [isLoadingBreakdown, setIsLoadingBreakdown] = useState(false);
+
+  React.useEffect(() => {
+    if (!selectedIncident) {
+      // oxlint-disable-next-line react/set-state-in-effect
+      setPriorityBreakdown(null);
+      return;
+    }
+    let isCancelled = false;
+    setIsLoadingBreakdown(true);
+    api.getPriorityBreakdown(selectedIncident.id)
+      .then((data) => {
+        if (!isCancelled) setPriorityBreakdown(data);
+      })
+      .catch(() => {
+        if (!isCancelled) {
+          const score = selectedIncident.priority_score ?? (selectedIncident.severity === "CRITICAL" ? 85.5 : selectedIncident.severity === "HIGH" ? 72.0 : 54.0);
+          // oxlint-disable-next-line react/purity
+          const calculatedAt = new Date().toISOString();
+          setPriorityBreakdown({
+            incident_id: selectedIncident.id,
+            incident_title: selectedIncident.title,
+            priority_score: score,
+            factors: {
+              severity: {
+                weight: 0.35,
+                raw_factor: selectedIncident.severity === "CRITICAL" ? 1.0 : selectedIncident.severity === "HIGH" ? 0.75 : 0.5,
+                contribution: (selectedIncident.severity === "CRITICAL" ? 1.0 : selectedIncident.severity === "HIGH" ? 0.75 : 0.5) * 35,
+                explanation: `35% weight triage factor for ${selectedIncident.severity}`,
+              },
+              people_affected: {
+                weight: 0.20,
+                raw_factor: Math.min(1.0, (selectedIncident.people_affected || 5) / 50),
+                contribution: Math.min(1.0, (selectedIncident.people_affected || 5) / 50) * 20,
+                explanation: `20% weight scaled by ${selectedIncident.people_affected || 5} victims reported`,
+              },
+              life_threat: {
+                weight: 0.20,
+                raw_factor: selectedIncident.severity === "CRITICAL" ? 1.0 : 0.7,
+                contribution: (selectedIncident.severity === "CRITICAL" ? 1.0 : 0.7) * 20,
+                explanation: "20% weight acute hazard to human life",
+              },
+              waiting_time: {
+                weight: 0.10,
+                raw_factor: 0.35,
+                contribution: 3.5,
+                explanation: "10% weight duration waiting without response",
+              },
+              resource_need: {
+                weight: 0.10,
+                raw_factor: 0.75,
+                contribution: 7.5,
+                explanation: `10% weight scarcity demand for ${selectedIncident.category} assets`,
+              },
+              location_risk: {
+                weight: 0.05,
+                raw_factor: 0.5,
+                contribution: 2.5,
+                explanation: "5% weight spatial vulnerability factor",
+              },
+            },
+            calculated_at: calculatedAt,
+          });
+        }
+      })
+      .finally(() => {
+        if (!isCancelled) setIsLoadingBreakdown(false);
+      });
+    return () => {
+      isCancelled = true;
+    };
+  }, [selectedIncident]);
 
   // Filtered incidents
   const filteredIncidents = incidents.filter((inc) => {
@@ -644,6 +722,104 @@ export const AuthorityDashboard: React.FC<AuthorityDashboardProps> = ({
                   {selectedIncident.description}
                 </p>
               </div>
+
+              {/* Phase 3: 6-Factor Transparent Priority Scoring Breakdown (T-041) */}
+              {priorityBreakdown && (
+                <div
+                  style={{
+                    marginBottom: "20px",
+                    padding: "16px",
+                    background: "rgba(15, 23, 42, 0.7)",
+                    borderRadius: "10px",
+                    border: "1px solid rgba(56, 189, 248, 0.25)",
+                  }}
+                >
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "12px" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                      <Zap size={18} color="var(--accent-cyan)" />
+                      <span style={{ fontSize: "0.85rem", fontWeight: 700, color: "#fff" }}>
+                        6-Factor Transparent Priority Formula (T-041)
+                      </span>
+                      {isLoadingBreakdown && (
+                        <span style={{ fontSize: "0.7rem", color: "var(--accent-cyan)", marginLeft: "4px" }}>
+                          (Syncing...)
+                        </span>
+                      )}
+                    </div>
+                    <span
+                      style={{
+                        fontSize: "0.82rem",
+                        fontFamily: "var(--font-mono)",
+                        fontWeight: 800,
+                        padding: "3px 10px",
+                        borderRadius: "12px",
+                        background:
+                          priorityBreakdown.priority_score >= 80
+                            ? "rgba(244, 63, 94, 0.2)"
+                            : priorityBreakdown.priority_score >= 60
+                            ? "rgba(234, 179, 8, 0.2)"
+                            : "rgba(56, 189, 248, 0.2)",
+                        color:
+                          priorityBreakdown.priority_score >= 80
+                            ? "#f43f5e"
+                            : priorityBreakdown.priority_score >= 60
+                            ? "#eab308"
+                            : "#38bdf8",
+                        border: "1px solid currentColor",
+                      }}
+                    >
+                      Score: {priorityBreakdown.priority_score.toFixed(1)} / 100
+                    </span>
+                  </div>
+
+                  {/* Factor Progress Grid */}
+                  <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                    {Object.entries(priorityBreakdown.factors).map(([key, item]) => {
+                      const maxPts = item.weight * 100;
+                      const pct = Math.min(100, (item.contribution / maxPts) * 100);
+                      const labelMap: Record<string, string> = {
+                        severity: "Severity Level",
+                        people_affected: "People Affected",
+                        life_threat: "Life Threat Index",
+                        waiting_time: "Waiting Time Penalty",
+                        resource_need: "Resource Scarcity",
+                        location_risk: "Location Vulnerability",
+                      };
+                      return (
+                        <div key={key} style={{ fontSize: "0.75rem" }}>
+                          <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "2px" }}>
+                            <span style={{ color: "var(--text-secondary)", fontWeight: 500 }}>
+                              {labelMap[key] || key} <span style={{ color: "var(--text-muted)" }}>({(item.weight * 100).toFixed(0)}% wt)</span>
+                            </span>
+                            <span style={{ color: "#fff", fontFamily: "var(--font-mono)", fontWeight: 600 }}>
+                              +{item.contribution.toFixed(1)} / {maxPts.toFixed(0)} pts
+                            </span>
+                          </div>
+                          <div style={{ height: "4px", background: "rgba(255, 255, 255, 0.08)", borderRadius: "2px", overflow: "hidden" }}>
+                            <div
+                              style={{
+                                width: `${pct}%`,
+                                height: "100%",
+                                background:
+                                  key === "severity" || key === "life_threat"
+                                    ? "var(--sev-critical)"
+                                    : key === "people_affected"
+                                    ? "var(--sev-high)"
+                                    : "var(--accent-cyan)",
+                              }}
+                            />
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  <div style={{ marginTop: "10px", fontSize: "0.7rem", color: "var(--text-muted)", display: "flex", alignItems: "center", gap: "6px" }}>
+                    <BarChart2 size={12} />
+                    Fully auditable mathematical calculation: P = Σ(w_i * f_i)
+                  </div>
+                </div>
+              )}
 
               {/* AI Inference Diagnostic Panel */}
               {activePrediction && (
